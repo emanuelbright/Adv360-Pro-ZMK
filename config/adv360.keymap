@@ -36,11 +36,11 @@
 
         default_layer {
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3  &kp N4  &kp N5  &tog 1                                                  &mo 3          &kp N6  &kp N7    &kp N8     &kp N9        &kp N0     &kp MINUS
-&kp TAB    &kp Q      &kp W     &kp F   &kp P   &kp B   &kp HOME                                                &kp PAGE_UP    &kp J   &kp L     &kp U      &kp Y         &kp SEMI   &kp BSLH
-&kp ESC    &kp A      &kp R     &kp S   &kp T   &kp G   &kp END   &kp LCTRL  &kp LALT      &kp LGUI  &kp RCTRL  &kp PAGE_DOWN  &kp M   &kp N     &kp E      &kp I         &kp O      &kp SQT
-&kp LSHFT  &kp Z      &kp X     &kp C   &kp D   &kp V                        &none         &none                               &kp K   &kp H     &kp COMMA  &kp DOT       &kp FSLH   &kp RSHFT
-&mo 2      &kp GRAVE  &kp CAPS  &none   &none           &kp BSPC  &kp DEL    &none         &none     &kp ENTER  &kp SPACE              &kp LEFT  &kp DOWN   &kp UP_ARROW  &kp RIGHT  &mo 2
+&kp EQUAL  &mt LS(N1) NUMBER_1  &mt LS(N2) NUMBER_2  &mt LS(N3) NUMBER_3  &mt LS(N4) NUMBER_4  &mt LS(N5) N5  &tog 1                                                  &mo 3          &mt LS(N6) NUMBER_6  &mt LS(N7) N7  &mt LS(N8) N8  &mt LS(N9) N9  &mt LS(N0) N0  &kp MINUS
+&kp TAB    &kp Q                &kp W                &kp F                &kp P                &kp B          &kp HOME                                                &kp PAGE_UP    &kp J                &kp L          &kp U          &kp Y          &kp SEMI       &kp BSLH
+&kp ESC    &kp A                &kp R                &kp S                &kp T                &kp G          &kp END   &kp LCTRL  &kp LALT      &kp LGUI  &kp RCTRL  &kp PAGE_DOWN  &kp M                &kp N          &kp E          &kp I          &kp O          &kp SQT
+&kp LSHFT  &kp Z                &kp X                &kp C                &kp D                &kp V                               &none         &none                               &kp K                &kp H          &kp COMMA      &kp DOT        &kp FSLH       &kp RSHFT
+&mo 2      &kp GRAVE            &kp CAPS             &none                &none                               &kp BSPC  &kp DEL    &none         &none     &kp ENTER  &kp SPACE                           &kp LEFT       &kp UP_ARROW   &kp DOWN       &kp RIGHT      &mo 2
             >;
         };
 
