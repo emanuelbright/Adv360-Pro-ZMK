@@ -46,11 +46,11 @@
 
         layer_keypad {
             bindings = <
-&trans         &kp RIGHT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LBKT       &kp RBKT   &trans                                      &none   &kp LBKT   &kp RBKT       &kp LPAR       &kp RPAR       &kp LEFT_BRACE   &none
-&none          &kp LEFT_BRACE   &mt LS(N9) N9         &mt LS(N8) N8          &mt LS(N7) N7  &kp EQUAL  &none                                       &none   &kp EQUAL  &mt RS(N7) N7  &mt RS(N8) N8  &mt RS(N9) N9  &kp RIGHT_BRACE  &none
-&kp ASTRK      &kp PLUS         &mt LS(N6) N6         &mt LS(N5) N5          &mt LS(N4) N4  &kp N0     &none   &trans  &trans      &trans  &trans  &none   &kp N0     &mt RS(N4) N4  &mt RS(N5) N5  &mt RS(N6) N6  &kp PLUS         &kp ASTRK
-&kp BACKSLASH  &kp MINUS        &mt LS(N3) N3         &mt LS(N2) N2          &mt LS(N1) N1  &kp DOT                    &trans      &trans                  &kp DOT    &mt RS(N1) N1  &mt RS(N2) N2  &mt RS(N3) N3  &kp MINUS        &kp BACKSLASH
-&mo 2          &kp LEFT         &kp DOWN              &kp UP_ARROW           &kp RIGHT                 &trans  &trans  &trans      &trans  &trans  &trans             &kp LEFT       &kp UP         &kp DOWN       &kp RIGHT        &mo 2
+&trans         &kp LPAR   &kp RPAR       &kp LBKT       &kp RBKT       &none      &trans                                      &none   &none      &kp LBKT       &kp RBKT       &kp LPAR       &kp RPAR   &none
+&kp LBRC       &kp RBRC   &mt LS(N9) N9  &mt LS(N8) N8  &mt LS(N7) N7  &kp EQUAL  &none                                       &none   &kp EQUAL  &mt RS(N7) N7  &mt RS(N8) N8  &mt RS(N9) N9  &kp LBRC   &kp RBRC
+&kp ASTRK      &kp PLUS   &mt LS(N6) N6  &mt LS(N5) N5  &mt LS(N4) N4  &kp N0     &none   &trans  &trans      &trans  &trans  &none   &kp N0     &mt RS(N4) N4  &mt RS(N5) N5  &mt RS(N6) N6  &kp PLUS   &kp ASTRK
+&kp BACKSLASH  &kp MINUS  &mt LS(N3) N3  &mt LS(N2) N2  &mt LS(N1) N1  &kp DOT                    &trans      &trans                  &kp DOT    &mt RS(N1) N1  &mt RS(N2) N2  &mt RS(N3) N3  &kp MINUS  &kp BACKSLASH
+&mo 2          &kp LEFT   &kp DOWN       &kp UP_ARROW   &kp RIGHT                 &trans  &trans  &trans      &trans  &trans  &trans             &kp LEFT       &kp UP         &kp DOWN       &kp RIGHT  &mo 2
             >;
         };
 
