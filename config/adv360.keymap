@@ -31,6 +31,15 @@
         };
     };
 
+    macros {
+        fn_lock: fn_lock {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&tog 2>;
+            label = "FN_LOCK";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -39,7 +48,7 @@
 &kp PRINTSCREEN  &mt LS(N1) NUMBER_1  &mt LS(N2) NUMBER_2  &mt LS(N3) NUMBER_3                &mt LS(N4) NUMBER_4                  &mt LS(N5) N5  &tog 1                                                                            &mo 3          &mt RS(N6) NUMBER_6  &mt RS(N7) N7  &mt RS(N8) N8  &mt RS(N9) N9  &mt RS(N0) N0  &kp EQUAL
 &kp TAB          &kp Q                &mt LC(W) W          &kp F                              &mt LC(P) P                          &kp B          &kp HOME                                                                          &kp PAGE_UP    &kp J                &kp L          &kp U          &kp Y          &kp SEMI       &kp MINUS
 &kp CAPSLOCK     &mt LC(A) A          &kp R                &mt LC(S) S                        &kp T                                &kp G          &kp END         &kp LCTRL  &kp LALT                &kp RALT            &kp RCTRL  &kp PAGE_DOWN  &kp M                &kp N          &kp E          &kp I          &mt RC(O) O    &kp SQT
-&kp ESCAPE       &mt LC(Z) Z          &mt LC(X) X          &mt LC(C) C                        &kp D                                &mt LC(V) V                               &kp BSPC                &kp DEL                                       &kp K                &kp H          &kp COMMA      &kp DOT        &kp FSLH       &kp BACKSLASH
+&mt ESC ESC      &mt LC(Z) Z          &mt LC(X) X          &mt LC(C) C                        &kp D                                &mt LC(V) V                               &kp BSPC                &kp DEL                                       &kp K                &kp H          &kp COMMA      &kp DOT        &kp FSLH       &kp BACKSLASH
 &mo 2            &kp LEFT_GUI         &mt LS(GRAVE) GRAVE  &mt LS(LEFT_BRACKET) LEFT_BRACKET  &mt LS(RIGHT_BRACKET) RIGHT_BRACKET                 &kp LEFT_SHIFT  &kp SPACE  &kp K_CONTEXT_MENU      &kp K_CONTEXT_MENU  &kp ENTER  &kp RSHIFT                          &kp LEFT       &kp UP         &kp DOWN       &kp RIGHT      &mo 2
             >;
         };
@@ -56,11 +65,11 @@
 
         layer_fn {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &tog 1                                      &mo 3   &kp F7  &kp F8  &kp F9           &kp F10            &kp F11  &kp F12
-&trans  &trans  &trans  &trans  &trans  &trans  &none                                       &none   &trans  &trans  &trans           &trans             &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans           &trans             &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans           &trans             &trans   &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &trans   &trans
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &tog 1                                      &mo 3   &kp F7  &kp F8  &kp F9           &kp F10            &kp F11     &kp F12
+&trans  &trans  &trans  &trans  &trans  &trans  &none                                       &none   &trans  &trans  &trans           &trans             &trans      &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans           &trans             &trans      &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans           &trans             &trans      &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &kp K_MUTE  &trans
             >;
         };
 
