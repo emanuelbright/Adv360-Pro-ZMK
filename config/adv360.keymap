@@ -51,7 +51,7 @@
 
         layer_fn {
             bindings = <
-&trans  &kp F1  &kp F2  &kp F3  &kp F4           &kp F5  &kp F11                                      &kp F12  &kp F6  &kp F7             &kp F8      &kp F9  &kp F10  &trans
+&trans  &kp F5  &kp F4  &kp F3  &kp F2           &kp F1  &kp F11                                      &kp F12  &kp F6  &kp F7             &kp F8      &kp F9  &kp F10  &trans
 &trans  &trans  &trans  &trans  &trans           &trans  &none                                        &none    &trans  &trans             &trans      &trans  &trans   &trans
 &trans  &trans  &trans  &trans  &trans           &trans  &none    &trans  &trans      &trans  &trans  &none    &trans  &trans             &trans      &trans  &trans   &trans
 &trans  &trans  &trans  &trans  &trans           &trans                   &trans      &trans                   &trans  &trans             &trans      &trans  &trans   &trans
@@ -71,11 +71,11 @@
 
         layer_symbols {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans    &trans    &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &kp LPAR  &kp RPAR  &kp LBKT  &kp RBKT  &kp LBRC  &kp RBRC
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans    &trans    &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans    &trans    &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans            &trans    &trans    &trans    &trans    &trans
+&trans  &trans  &trans     &trans       &trans           &trans  &trans                                      &trans  &trans    &trans    &trans    &trans    &trans    &trans
+&trans  &trans  &trans     &trans       &kp AMPS         &trans  &trans                                      &trans  &kp LPAR  &kp RPAR  &kp LBKT  &kp RBKT  &kp LBRC  &kp RBRC
+&trans  &trans  &kp CARET  &kp PERCENT  &kp DOLLAR       &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans    &trans    &trans    &trans    &trans    &trans
+&trans  &trans  &kp POUND  &kp AT       &kp EXCLAMATION  &trans                  &trans      &trans                  &trans    &trans    &trans    &trans    &trans    &trans
+&trans  &trans  &trans     &trans       &trans                   &trans  &trans  &trans      &trans  &trans  &trans            &trans    &trans    &trans    &trans    &trans
             >;
         };
 
