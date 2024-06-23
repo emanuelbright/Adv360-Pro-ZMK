@@ -52,30 +52,30 @@
         layer_symbols {
             bindings = <
 &trans  &trans  &trans     &trans       &trans      &trans     &trans                                      &trans  &kp BSLH  &kp FSLH  &kp PIPE   &kp SEMI  &trans     &trans
-&trans  &none   &kp PLUS   &kp ASTRK    &kp AMPS    &kp TILDE  &trans                                      &trans  &kp LBKT  &kp RBKT  &kp LT     &kp GT    &kp COLON  &trans
-&trans  &none   &kp CARET  &kp PERCENT  &kp DOLLAR  &kp GRAVE  &trans  &trans  &trans      &trans  &trans  &trans  &kp LPAR  &kp RPAR  &kp SQT    &kp DQT   &kp MINUS  &trans
-&trans  &none   &kp POUND  &kp AT       &kp EXCL    &kp QMARK                  &trans      &trans                  &kp LBRC  &kp RBRC  &kp COMMA  &kp DOT   &kp UNDER  &trans
+&trans  &trans  &kp PLUS   &kp ASTRK    &kp AMPS    &kp TILDE  &trans                                      &trans  &kp LBKT  &kp RBKT  &kp LT     &kp GT    &kp COLON  &trans
+&trans  &trans  &kp CARET  &kp PERCENT  &kp DOLLAR  &kp GRAVE  &trans  &trans  &trans      &trans  &trans  &trans  &kp LPAR  &kp RPAR  &kp SQT    &kp DQT   &kp MINUS  &trans
+&trans  &trans  &kp POUND  &kp AT       &kp EXCL    &kp QMARK                  &trans      &trans                  &kp LBRC  &kp RBRC  &kp COMMA  &kp DOT   &kp UNDER  &trans
 &trans  &trans  &trans     &trans       &trans                 &trans  &trans  &trans      &trans  &trans  &trans            &trans    &trans     &trans    &trans     &trans
             >;
         };
 
         layer_keypad {
             bindings = <
-&none   &none      &kp FSLH  &kp LPAR  &kp RPAR  &none    &none                                                &none      &none    &kp LPAR  &kp RPAR  &kp FSLH  &none      &none
+&none   &none      &kp FSLH  &kp LPAR  &kp RPAR  &none    &none                                                &trans     &none    &kp LPAR  &kp RPAR  &kp FSLH  &none      &none
 &none   &kp ASTRK  &kp N9    &kp N8    &kp N7    &none    &none                                                &none      &none    &kp N7    &kp N8    &kp N9    &kp ASTRK  &none
 &none   &kp PLUS   &kp N6    &kp N5    &kp N4    &kp DOT  &none      &trans     &trans      &trans  &trans     &none      &kp DOT  &kp N4    &kp N5    &kp N6    &kp PLUS   &none
 &none   &kp MINUS  &kp N3    &kp N2    &kp N1    &kp N0                         &trans      &trans                        &kp N0   &kp N1    &kp N2    &kp N3    &kp MINUS  &none
-&trans  &trans     &trans    &trans    &trans             &kp EQUAL  &kp ENTER  &trans      &trans  &kp ENTER  &kp EQUAL           &trans    &trans    &trans    &none      &trans
+&trans  &trans     &trans    &trans    &trans             &kp EQUAL  &kp ENTER  &trans      &trans  &kp ENTER  &kp EQUAL           &trans    &trans    &trans    &trans     &trans
             >;
         };
 
         layer_fn {
             bindings = <
 &trans  &kp F5  &kp F4  &kp F3  &kp F2           &kp F1  &kp F11                                      &kp F12  &kp F6  &kp F7             &kp F8      &kp F9  &kp F10  &trans
-&trans  &trans  &trans  &trans  &trans           &trans  &none                                        &none    &trans  &trans             &trans      &trans  &trans   &trans
-&trans  &trans  &trans  &trans  &trans           &trans  &none    &trans  &trans      &trans  &trans  &none    &trans  &trans             &trans      &trans  &trans   &trans
+&trans  &trans  &trans  &trans  &trans           &trans  &trans                                       &trans   &trans  &trans             &trans      &trans  &trans   &trans
+&trans  &trans  &trans  &trans  &trans           &trans  &trans   &trans  &trans      &trans  &trans  &trans   &trans  &trans             &trans      &trans  &trans   &trans
 &trans  &trans  &trans  &trans  &trans           &trans                   &trans      &trans                   &trans  &trans             &trans      &trans  &trans   &trans
-&trans  &trans  &trans  &trans  &kp C_VOLUME_UP          &trans   &trans  &trans      &trans  &trans  &trans           &kp C_VOLUME_DOWN  &kp C_MUTE  &none   &none    &trans
+&trans  &trans  &trans  &trans  &kp C_VOLUME_UP          &trans   &trans  &trans      &trans  &trans  &trans           &kp C_VOLUME_DOWN  &kp C_MUTE  &trans  &trans   &trans
             >;
         };
 
