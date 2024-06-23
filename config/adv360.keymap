@@ -41,11 +41,31 @@
 
         default_layer {
             bindings = <
-&mo 2           &mt LS(N5) N5        &mt LS(NUMBER_4) NUMBER_4  &mt LS(N3) NUMBER_3  &mt LS(NUMBER_2) NUMBER_2  &mt LS(NUMBER_1) NUMBER_1  &kp PRINTSCREEN                                                              &kp INS        &mt RS(N6) NUMBER_6  &mt RS(N7) N7  &mt RS(N8) N8        &mt RS(N9) N9      &mt RS(N0) N0      &mt RS(EQUAL) EQUAL
-&kp TAB         &kp Q                &mt LC(W) W                &kp F                &mt LC(P) P                &kp B                      &kp HOME                                                                     &kp END        &kp J                &kp L          &kp U                &mt RC(Y) Y        &mt RS(SEMI) SEMI  &mt RS(MINUS) MINUS
-&kp CAPS        &mt LC(A) A          &kp R                      &mt LC(S) S          &kp T                      &kp G                      &kp PG_UP        &kp LCTRL  &kp LALT                &kp LEFT_GUI  &kp RCTRL  &kp PAGE_DOWN  &kp M                &kp N          &kp E                &kp I              &mt RC(O) O        &mt RS(SQT) SQT
-&kp LEFT_SHIFT  &mt LC(Z) Z          &mt LC(X) X                &mt LC(C) C          &kp D                      &mt LC(V) V                                            &kp K_CONTEXT_MENU      &tog 1                                  &kp K                &kp H          &mt RS(COMMA) COMMA  &mt RS(DOT) DOT    &mt RS(FSLH) FSLH  &kp RIGHT_SHIFT
-&mo 1           &mt LS(GRAVE) GRAVE  &mt LS(BSLH) BSLH          &kp LEFT             &kp UP_ARROW                                          &kp BACKSPACE    &kp SPACE  &kp ESC                 &tog 0        &kp ENTER  &kp DELETE                          &kp DOWN       &kp RIGHT            &mt RS(LBKT) LBKT  &mt RS(RBKT) RBKT  &mo 1
+&mt LS(GRAVE) GRAVE  &mt LS(N5) N5  &mt LS(NUMBER_4) NUMBER_4  &mt LS(N3) NUMBER_3  &mt LS(NUMBER_2) NUMBER_2  &mt LS(NUMBER_1) NUMBER_1  &kp PRINTSCREEN                                                       &kp INS    &mt RS(N6) NUMBER_6  &mt RS(N7) N7  &mt RS(N8) N8        &mt RS(N9) N9      &mt RS(N0) N0      &mt RS(EQUAL) EQUAL
+&kp TAB              &kp Q          &mt LC(W) W                &kp F                &mt LC(P) P                &kp B                      &mo 4                                                                 &tog 2     &kp J                &kp L          &kp U                &mt RC(Y) Y        &mt RS(SEMI) SEMI  &mt RS(MINUS) MINUS
+&kp ESC              &mt LC(A) A    &kp R                      &mt LC(S) S          &kp T                      &kp G                      &kp K_CONTEXT_MENU  &kp LCTRL  &kp LALT      &kp LEFT_GUI  &kp RCTRL  &tog 1     &kp M                &kp N          &kp E                &kp I              &mt RC(O) O        &mt RS(SQT) SQT
+&kp LEFT_SHIFT       &mt LC(Z) Z    &mt LC(X) X                &mt LC(C) C          &kp D                      &mt LC(V) V                                               &kp HOME      &kp PG_UP                           &kp K                &kp H          &mt RS(COMMA) COMMA  &mt RS(DOT) DOT    &mt RS(FSLH) FSLH  &kp RIGHT_SHIFT
+&mo 3                &kp CAPS       &mt LS(BSLH) BSLH          &kp LEFT             &kp RIGHT                                             &kp BACKSPACE       &kp DEL    &kp END       &kp PG_DN     &kp ENTER  &kp SPACE                       &kp UP         &kp DOWN             &mt RS(LBKT) LBKT  &mt RS(RBKT) RBKT  &mo 3
+            >;
+        };
+
+        layer_symbols {
+            bindings = <
+&trans  &trans  &trans     &trans       &trans      &trans     &trans                                      &trans  &kp BSLH  &kp FSLH  &kp PIPE   &kp SEMI  &trans     &trans
+&trans  &none   &kp PLUS   &kp ASTRK    &kp AMPS    &kp TILDE  &trans                                      &trans  &kp LBKT  &kp RBKT  &kp LT     &kp GT    &kp COLON  &trans
+&trans  &none   &kp CARET  &kp PERCENT  &kp DOLLAR  &kp GRAVE  &trans  &trans  &trans      &trans  &trans  &trans  &kp LPAR  &kp RPAR  &kp SQT    &kp DQT   &kp MINUS  &trans
+&trans  &none   &kp POUND  &kp AT       &kp EXCL    &kp QMARK                  &trans      &trans                  &kp LBRC  &kp RBRC  &kp COMMA  &kp DOT   &kp UNDER  &trans
+&trans  &trans  &trans     &trans       &trans                 &trans  &trans  &trans      &trans  &trans  &trans            &trans    &trans     &trans    &trans     &trans
+            >;
+        };
+
+        layer_keypad {
+            bindings = <
+&none   &none      &kp FSLH  &kp LPAR  &kp RPAR  &none    &none                                                &none      &none    &kp LPAR  &kp RPAR  &kp FSLH  &none      &none
+&none   &kp ASTRK  &kp N9    &kp N8    &kp N7    &none    &none                                                &none      &none    &kp N7    &kp N8    &kp N9    &kp ASTRK  &none
+&none   &kp PLUS   &kp N6    &kp N5    &kp N4    &kp DOT  &none      &trans     &trans      &trans  &trans     &none      &kp DOT  &kp N4    &kp N5    &kp N6    &kp PLUS   &none
+&none   &kp MINUS  &kp N3    &kp N2    &kp N1    &kp N0                         &trans      &trans                        &kp N0   &kp N1    &kp N2    &kp N3    &kp MINUS  &none
+&trans  &trans     &trans    &trans    &trans             &kp EQUAL  &kp ENTER  &trans      &trans  &kp ENTER  &kp EQUAL           &trans    &trans    &trans    &none      &trans
             >;
         };
 
@@ -66,26 +86,6 @@
 &none  &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none  &none       &none       &none  &none  &none
 &none  &none         &none         &none         &macro_ver    &none                             &none      &none                                           &none  &none       &none       &none  &none  &none
 &none  &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC  &bl BL_DEC  &none  &none  &none
-            >;
-        };
-
-        layer_symbols {
-            bindings = <
-&trans  &trans  &trans     &trans       &trans           &trans  &trans                                      &trans  &trans    &trans    &none      &none     &trans         &trans
-&trans  &trans  &trans     &kp ASTRK    &kp AMPS         &trans  &trans                                      &trans  &kp LBKT  &kp RBKT  &kp LT     &kp GT    &kp SEMICOLON  &kp COLON
-&trans  &trans  &kp CARET  &kp PERCENT  &kp DOLLAR       &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp LPAR  &kp RPAR  &kp SQT    &kp DQT   &kp MINUS      &kp UNDER
-&trans  &trans  &kp POUND  &kp AT       &kp EXCLAMATION  &trans                  &trans      &trans                  &kp LBRC  &kp RBRC  &kp COMMA  &kp DOT   &trans         &trans
-&trans  &trans  &trans     &trans       &trans                   &trans  &trans  &trans      &trans  &trans  &trans            &trans    &trans     &kp FSLH  &kp BSLH       &trans
-            >;
-        };
-
-        layer_keypad {
-            bindings = <
-&none   &none      &kp FSLH  &kp LPAR  &kp RPAR  &none      &none                                             &none   &none      &kp LPAR  &kp RPAR  &kp FSLH  &none      &none
-&none   &kp ASTRK  &kp N9    &kp N8    &kp N7    &kp EQUAL  &none                                             &none   &kp EQUAL  &kp N7    &kp N8    &kp N9    &kp ASTRK  &none
-&none   &kp PLUS   &kp N6    &kp N5    &kp N4    &kp DOT    &none   &trans     &trans      &trans  &trans     &none   &kp DOT    &kp N4    &kp N5    &kp N6    &kp PLUS   &none
-&none   &kp MINUS  &kp N3    &kp N2    &kp N1    &kp N0                        &trans      &trans                     &kp N0     &kp N1    &kp N2    &kp N3    &kp MINUS  &none
-&trans  &trans     &trans    &trans    &trans               &trans  &kp ENTER  &trans      &trans  &kp ENTER  &trans             &trans    &trans    &trans    &none      &trans
             >;
         };
     };
