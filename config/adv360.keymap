@@ -51,11 +51,11 @@
 
         layer_keypad {
             bindings = <
-&kp BSLH   &kp LBKT   &kp RBKT       &kp LPAR       &kp RPAR       &none      &none                                          &kp LBKT             &kp RBKT         &kp LPAR       &kp RPAR       &kp LBRC       &kp RBRC             &mt RS(GRAVE) GRAVE
-&kp LBRC   &kp RBRC   &mt LS(N9) N9  &mt LS(N8) N8  &mt LS(N7) N7  &kp EQUAL  &none                                          &mt RS(BSLH) BSLH    &kp EQUAL        &mt RS(N7) N7  &kp N8         &kp N9         &mt RS(SEMI) SEMI    &mt RS(SQT) SQT
-&kp ASTRK  &kp PLUS   &mt LS(N6) N6  &mt LS(N5) N5  &mt LS(N4) N4  &kp DOT    &kp COMMA  &trans  &trans      &trans  &trans  &mt RS(COMMA) COMMA  &mt RS(DOT) DOT  &mt RS(N4) N4  &mt RS(N5) N5  &mt RS(N6) N6  &kp PLUS             &kp ASTRK
-&kp FSLH   &kp MINUS  &mt LS(N3) N3  &mt LS(N2) N2  &mt LS(N1) N1  &kp N0                        &trans      &trans                               &kp N0           &mt RS(N1) N1  &mt RS(N2) N2  &mt RS(N3) N3  &mt RS(MINUS) MINUS  &mt RS(FSLH) FSLH
-&trans     &kp DOWN   &kp LEFT       &kp UP_ARROW   &kp RIGHT                 &trans     &trans  &trans      &trans  &trans  &trans                                &trans         &trans         &trans         &trans               &trans
+&none   &none      &kp FSLH  &kp LPAR  &kp RPAR  &none      &none                                             &none   &none      &kp LPAR  &kp RPAR  &kp FSLH  &none      &none
+&none   &kp ASTRK  &kp N9    &kp N8    &kp N7    &kp EQUAL  &none                                             &none   &kp EQUAL  &kp N7    &kp N8    &kp N9    &kp ASTRK  &none
+&none   &kp PLUS   &kp N6    &kp N5    &kp N4    &kp DOT    &none   &trans     &trans      &trans  &trans     &none   &kp DOT    &kp N4    &kp N5    &kp N6    &kp PLUS   &none
+&none   &kp MINUS  &kp N3    &kp N2    &kp N1    &kp N0                        &trans      &trans                     &kp N0     &kp N1    &kp N2    &kp N3    &kp MINUS  &none
+&trans  &trans     &trans    &trans    &trans               &trans  &kp ENTER  &trans      &trans  &kp ENTER  &trans             &trans    &trans    &trans    &none      &trans
             >;
         };
 
