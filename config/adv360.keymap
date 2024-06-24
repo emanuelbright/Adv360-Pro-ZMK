@@ -34,6 +34,13 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+
+        check_battery: check_battery {
+            compatible = "zmk,behavior-tap-dance";
+            label = "CHECK_BATTERY";
+            #binding-cells = <0>;
+            bindings = <&mo 4>, <&rgb_ug RGB_TOG>;
+        };
     };
 
     keymap {
@@ -71,11 +78,11 @@
 
         layer_fn {
             bindings = <
-&trans  &kp F1  &kp F2  &kp F3  &kp F4           &kp F5  &kp F11                                      &kp F12  &kp F6  &kp F7             &kp F8      &kp F9  &kp F10  &trans
-&trans  &trans  &trans  &trans  &trans           &trans  &trans                                       &trans   &trans  &trans             &trans      &trans  &trans   &trans
-&trans  &trans  &trans  &trans  &trans           &trans  &trans   &trans  &trans      &trans  &trans  &trans   &trans  &trans             &trans      &trans  &trans   &trans
-&trans  &trans  &trans  &trans  &trans           &trans                   &trans      &trans                   &trans  &trans             &trans      &trans  &trans   &trans
-&trans  &trans  &trans  &trans  &kp C_VOLUME_UP          &trans   &trans  &trans      &trans  &trans  &trans           &kp C_VOLUME_DOWN  &kp C_MUTE  &trans  &trans   &trans
+&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F11                                      &kp F12  &kp F6  &kp F7        &kp F8        &kp F9      &kp F10  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                       &trans   &trans  &trans        &trans        &trans      &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans  &trans      &trans  &trans  &trans   &trans  &trans        &trans        &trans      &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans                   &trans      &trans                   &trans  &trans        &trans        &trans      &trans   &trans
+&trans  &trans  &trans  &trans  &none           &trans   &trans  &trans      &trans  &trans  &trans           &kp C_VOL_UP  &kp C_VOL_DN  &kp C_MUTE  &trans   &trans
             >;
         };
 
