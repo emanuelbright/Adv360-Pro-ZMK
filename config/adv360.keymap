@@ -41,6 +41,26 @@
             #binding-cells = <0>;
             bindings = <&mo 4>, <&rgb_ug RGB_TOG>;
         };
+
+        tap_and_mo: tap_and_mo {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TAP_AND_MO";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <500>;
+        };
+
+        tap_and_tog: tap_and_tog {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TAP_AND_TOG";
+            bindings = <&tog>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <500>;
+            flavor = "tap-preferred";
+        };
     };
 
     keymap {
@@ -48,11 +68,11 @@
 
         default_layer {
             bindings = <
-&mt LS(GRAVE) GRAVE  &mt LS(N1) N1            &mt LS(N2) N2      &mt LS(N3) NUMBER_3  &mt LS(N4) N4  &mt LS(N5) N5  &kp K_LOCK                                                           &mo 4       &mt RS(N6) NUMBER_6  &mt RS(N7) N7  &mt RS(N8) N8        &mt RS(N9) N9      &mt RS(N0) N0      &mt RS(EQUAL) EQUAL
-&kp TAB              &kp Q                    &mt LC(W) W        &kp F                &mt LC(P) P    &kp B          &tog 1                                                               &mo 2       &kp J                &kp L          &kp U                &mt RC(Y) Y        &mt RS(SEMI) SEMI  &mt RS(MINUS) MINUS
-&kp ESC              &mt LC(A) A              &kp R              &mt LC(S) S          &kp T          &kp G          &kp PSCRN      &kp LCTRL  &kp LALT          &kp LEFT_GUI  &kp RCTRL  &kp K_CALC  &kp M                &kp N          &kp E                &kp I              &mt RC(O) O        &mt RS(SQT) SQT
-&kp LEFT_SHIFT       &mt LC(Z) Z              &mt LC(X) X        &mt LC(C) C          &kp D          &mt LC(V) V                              &mt INS HOME      &kp PG_UP                            &kp K                &kp H          &mt RS(COMMA) COMMA  &mt RS(DOT) DOT    &mt RS(FSLH) FSLH  &kp RIGHT_SHIFT
-&mo 3                &mt K_CONTEXT_MENU CAPS  &mt LS(BSLH) BSLH  &kp LEFT             &kp RIGHT                     &kp BACKSPACE  &kp DEL    &kp END           &kp PG_DN     &kp ENTER  &kp SPACE                        &kp UP         &kp DOWN             &mt RS(LBKT) LBKT  &mt RS(RBKT) RBKT  &mo 3
+&mt LS(GRAVE) GRAVE  &mt LS(N1) N1            &mt LS(N2) N2      &mt LS(N3) NUMBER_3  &mt LS(N4) N4  &mt LS(N5) N5  &kp K_LOCK                                                           &mo 4          &mt RS(N6) NUMBER_6  &mt RS(N7) N7  &mt RS(N8) N8        &mt RS(N9) N9      &mt RS(N0) N0      &mt RS(EQUAL) EQUAL
+&kp TAB              &kp Q                    &mt LC(W) W        &kp F                &mt LC(P) P    &kp B          &tog 1                                                               &mo 2          &kp J                &kp L          &kp U                &mt RC(Y) Y        &mt RS(SEMI) SEMI  &mt RS(MINUS) MINUS
+&kp ESC              &mt LC(A) A              &kp R              &mt LC(S) S          &kp T          &kp G          &kp PSCRN      &kp LCTRL  &kp LALT          &kp LEFT_GUI  &kp RCTRL  &kp C_AL_CALC  &kp M                &kp N          &kp E                &kp I              &mt RC(O) O        &mt RS(SQT) SQT
+&kp LEFT_SHIFT       &mt LC(Z) Z              &mt LC(X) X        &mt LC(C) C          &kp D          &mt LC(V) V                              &mt INS HOME      &kp PG_UP                               &kp K                &kp H          &mt RS(COMMA) COMMA  &mt RS(DOT) DOT    &mt RS(FSLH) FSLH  &kp RIGHT_SHIFT
+&mo 3                &mt K_CONTEXT_MENU CAPS  &mt LS(BSLH) BSLH  &kp LEFT             &kp RIGHT                     &kp BACKSPACE  &kp DEL    &kp END           &kp PG_DN     &kp ENTER  &kp SPACE                           &kp UP         &kp DOWN             &mt RS(LBKT) LBKT  &mt RS(RBKT) RBKT  &mo 3
             >;
         };
 
