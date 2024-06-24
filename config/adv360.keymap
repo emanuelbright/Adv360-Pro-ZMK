@@ -61,11 +61,11 @@
 
         layer_symbols {
             bindings = <
-&kp SEMI   &trans  &trans     &trans       &trans      &trans     &trans                                      &trans  &kp BSLH  &kp FSLH  &kp PIPE   &kp COLON  &trans     &trans
-&kp SQT    &trans  &kp PLUS   &kp ASTRK    &kp AMPS    &kp TILDE  &trans                                      &trans  &kp LBKT  &kp RBKT  &kp LT     &kp GT     &kp EQUAL  &trans
-&kp COMMA  &trans  &kp CARET  &kp PERCENT  &kp DOLLAR  &kp GRAVE  &trans  &trans  &trans      &trans  &trans  &trans  &kp LPAR  &kp RPAR  &kp SQT    &kp DQT    &kp MINUS  &trans
-&kp DQT    &trans  &kp POUND  &kp AT       &kp EXCL    &kp QMARK                  &trans      &trans                  &kp LBRC  &kp RBRC  &kp COMMA  &kp DOT    &kp UNDER  &trans
-&kp DOT    &trans  &trans     &trans       &trans                 &trans  &trans  &trans      &trans  &trans  &trans            &trans    &trans     &trans     &trans     &trans
+&kp SEMI   &trans  &trans     &trans       &trans      &trans     &trans                                      &trans  &none  &kp BSLH  &kp FSLH  &kp PIPE   &kp COLON       &trans
+&kp SQT    &trans  &none      &kp ASTRK    &kp AMPS    &kp TILDE  &trans                                      &trans  &none  &kp LBKT  &kp RBKT  &kp LT     &kp GT          &trans
+&kp COMMA  &trans  &kp CARET  &kp PERCENT  &kp DOLLAR  &kp GRAVE  &trans  &trans  &trans      &trans  &trans  &trans  &none  &kp LPAR  &kp RPAR  &kp MINUS  &kp UNDERSCORE  &trans
+&kp DQT    &trans  &kp POUND  &kp AT       &kp EXCL    &kp QMARK                  &trans      &trans                  &none  &kp LBRC  &kp RBRC  &kp EQUAL  &kp PLUS        &trans
+&kp DOT    &trans  &trans     &trans       &trans                 &trans  &trans  &trans      &trans  &trans  &trans         &trans    &trans    &trans     &trans          &trans
             >;
         };
 
