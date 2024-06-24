@@ -39,7 +39,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "CHECK_BATTERY";
             #binding-cells = <0>;
-            bindings = <&mo 4>, <&rgb_ug RGB_TOG>;
+            bindings = <&mo 3>, <&rgb_ug RGB_TOG>;
         };
 
         tap_and_mo: tap_and_mo {
@@ -68,7 +68,7 @@
 
         default_layer {
             bindings = <
-&mt LS(GRAVE) GRAVE  &mt LS(N1) N1            &mt LS(N2) N2      &mt LS(N3) NUMBER_3  &mt LS(N4) N4  &mt LS(N5) N5  &kp K_LOCK                                                                         &mo 4          &mt RS(N6) NUMBER_6  &mt RS(N7) N7  &mt RS(N8) N8        &mt RS(N9) N9      &mt RS(N0) N0      &mt RS(EQUAL) EQUAL
+&mt LS(GRAVE) GRAVE  &mt LS(N1) N1            &mt LS(N2) N2      &mt LS(N3) NUMBER_3  &mt LS(N4) N4  &mt LS(N5) N5  &kp K_LOCK                                                                         &mo 3          &mt RS(N6) NUMBER_6  &mt RS(N7) N7  &mt RS(N8) N8        &mt RS(N9) N9      &mt RS(N0) N0      &mt RS(EQUAL) EQUAL
 &kp TAB              &kp Q                    &mt LC(W) W        &kp F                &mt LC(P) P    &kp B          &none                                                                              &none          &kp J                &kp L          &kp U                &mt RC(Y) Y        &mt RS(SEMI) SEMI  &mt RS(MINUS) MINUS
 &kp ESC              &mt LC(A) A              &kp R              &mt LC(S) S          &kp T          &kp G          &kp PSCRN      &kp LCTRL  &kp LALT                &kp LEFT_GUI          &kp RCTRL  &kp C_AL_CALC  &kp M                &kp N          &kp E                &kp I              &mt RC(O) O        &mt RS(SQT) SQT
 &kp LEFT_SHIFT       &mt LC(Z) Z              &mt LC(X) X        &mt LC(C) C          &kp D          &mt LC(V) V                              &tap_and_mo 1 HOME      &tap_and_mo 1 PG_UP                             &kp K                &kp H          &mt RS(COMMA) COMMA  &mt RS(DOT) DOT    &mt RS(FSLH) FSLH  &kp RIGHT_SHIFT
@@ -96,23 +96,13 @@
             >;
         };
 
-        layer_fn_ {
-            bindings = <
-&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F11                                      &kp F12  &kp F6  &kp F7        &kp F8        &kp F9      &kp F10  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                       &trans   &trans  &trans        &trans        &trans      &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans  &trans      &trans  &trans  &trans   &trans  &trans        &trans        &trans      &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans                   &trans      &trans                   &trans  &trans        &trans        &trans      &trans   &trans
-&trans  &trans  &trans  &trans  &none           &trans   &trans  &trans      &trans  &trans  &trans           &kp C_VOL_UP  &kp C_VOL_DN  &kp C_MUTE  &trans   &trans
-            >;
-        };
-
         layer_fn {
             bindings = <
-&none       &kp F1           &kp F2        &kp F3        &kp F4        &kp F5        &kp F11                                              &kp F12                 &kp F6  &kp F7        &kp F8        &kp F9      &kp F10  &none
-&none       &none            &none         &none         &none         &none         &none                                                &none                   &none   &none         &none         &none       &none    &none
-&bt BT_CLR  &bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none    &none        &none      &none  &none        &rgb_ug RGB_MEFS_CMD 5  &none   &none         &none         &none       &none    &none
-&none       &none            &none         &none         &macro_ver    &none                               &none      &none                                       &none   &none         &none         &none       &none    &none
-&trans      &rgb_ug RGB_TOG  &bl BL_TOG    &bl BL_DEC    &bl BL_INC                  &none    &bootloader  &none      &none  &bootloader  &none                           &kp C_VOL_UP  &kp C_VOL_DN  &kp C_MUTE  &none    &trans
+&none       &kp F1           &kp F2        &kp F3        &kp F4        &kp F5        &kp F11                                              &kp F12                 &kp F6  &kp F7          &kp F8          &kp F9      &kp F10  &none
+&none       &none            &none         &none         &none         &none         &none                                                &none                   &none   &none           &none           &none       &none    &none
+&bt BT_CLR  &bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none    &none        &none      &none  &none        &rgb_ug RGB_MEFS_CMD 5  &none   &kp KP_NUMLOCK  &kp SCROLLLOCK  &none       &none    &none
+&none       &none            &none         &none         &macro_ver    &none                               &none      &none                                       &none   &none           &none           &none       &none    &none
+&trans      &rgb_ug RGB_TOG  &bl BL_TOG    &bl BL_DEC    &bl BL_INC                  &none    &bootloader  &none      &none  &bootloader  &none                           &kp C_VOL_UP    &kp C_VOL_DN    &kp C_MUTE  &none    &trans
             >;
         };
     };
