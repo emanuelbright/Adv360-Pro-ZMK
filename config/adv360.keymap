@@ -49,7 +49,7 @@
 
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <500>;
+            tapping-term-ms = <400>;
         };
 
         tap_and_tog: tap_and_tog {
@@ -58,7 +58,7 @@
             bindings = <&tog>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <500>;
+            tapping-term-ms = <400>;
             flavor = "tap-preferred";
         };
     };
@@ -69,9 +69,9 @@
         default_layer {
             bindings = <
 &mt LS(GRAVE) GRAVE  &mt LS(N1) N1            &mt LS(N2) N2      &mt LS(N3) NUMBER_3  &mt LS(N4) N4  &mt LS(N5) N5  &kp C_AL_LOCK                                                                      &none          &mt RS(N6) NUMBER_6  &mt RS(N7) N7  &mt RS(N8) N8        &mt RS(N9) N9      &mt RS(N0) N0      &mt RS(EQUAL) EQUAL
-&kp TAB              &mt LC(Q) Q              &mt LC(W) W        &mt LC(F) F          &mt LC(P) P    &mt LC(B) B    &none                                                                              &none          &kp J                &kp L          &kp U                &mt RC(Y) Y        &mt RS(SEMI) SEMI  &mt RS(MINUS) MINUS
-&kp ESC              &mt LC(A) A              &mt LC(R) R        &mt LC(S) S          &mt LC(T) T    &mt LC(G) G    &kp PSCRN      &kp LCTRL  &kp LALT                &kp LEFT_GUI          &kp RCTRL  &kp C_AL_CALC  &kp M                &kp N          &kp E                &kp I              &mt RC(O) O        &mt RS(SQT) SQT
-&kp LEFT_SHIFT       &mt LC(Z) Z              &mt LC(X) X        &mt LC(C) C          &mt LC(D) D    &mt LC(V) V                              &tap_and_mo 1 HOME      &tap_and_mo 1 PG_UP                             &kp K                &kp H          &mt RS(COMMA) COMMA  &mt RS(DOT) DOT    &mt RS(FSLH) FSLH  &kp RIGHT_SHIFT
+&kp TAB              &mt LC(Q) Q              &mt LC(W) W        &mt LC(F) F          &mt LC(P) P    &mt LC(B) B    &none                                                                              &none          &mt RC(J) J          &mt RC(L) L    &mt RC(U) U          &mt RC(Y) Y        &mt RS(SEMI) SEMI  &mt RS(MINUS) MINUS
+&kp ESC              &mt LC(A) A              &mt LC(R) R        &mt LC(S) S          &mt LC(T) T    &mt LC(G) G    &kp PSCRN      &kp LCTRL  &kp LALT                &kp LEFT_GUI          &kp RCTRL  &kp C_AL_CALC  &mt RC(M) M          &mt RC(N) N    &mt RC(E) E          &mt RC(I) I        &mt RC(O) O        &mt RS(SQT) SQT
+&kp LEFT_SHIFT       &mt LC(Z) Z              &mt LC(X) X        &mt LC(C) C          &mt LC(D) D    &mt LC(V) V                              &tap_and_mo 1 HOME      &tap_and_mo 1 PG_UP                             &mt RC(K) K          &mt RC(H) H    &mt RS(COMMA) COMMA  &mt RS(DOT) DOT    &mt RS(FSLH) FSLH  &kp RIGHT_SHIFT
 &mo 3                &mt K_CONTEXT_MENU CAPS  &mt LS(BSLH) BSLH  &kp LEFT             &kp RIGHT                     &kp BACKSPACE  &kp SPACE  &mt INS END             &tap_and_tog 2 PG_DN  &kp ENTER  &kp DEL                             &kp UP         &kp DOWN             &mt RS(LBKT) LBKT  &mt RS(RBKT) RBKT  &mo 3
             >;
         };
