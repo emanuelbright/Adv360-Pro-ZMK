@@ -92,11 +92,11 @@
 
         layer_symbols {
             bindings = <
-&kp TILDE  &kp GRAVE  &kp POUND  &kp SEMI   &kp COLON   &none  &none                                       &none   &none  &kp BSLH  &kp FSLH  &kp PIPE   &none           &none
-&none      &kp PRCNT  &kp DLLR   &kp SQT    &kp DQT     &none  &none                                       &none   &none  &kp LBKT  &kp RBKT  &kp LT     &kp GT          &none
-&none      &kp AT     &kp AMPS   &kp COMMA  &kp PERIOD  &none  &none   &trans  &trans      &trans  &trans  &none   &none  &kp LPAR  &kp RPAR  &kp MINUS  &kp UNDERSCORE  &none
-&none      &kp CARET  &kp ASTRK  &kp EXCL   &kp QMARK   &none                  &trans      &trans                  &none  &kp LBRC  &kp RBRC  &kp EQUAL  &kp PLUS        &none
-&none      &none      &none      &none      &none              &trans  &trans  &trans      &trans  &trans  &trans         &none     &none     &none      &none           &none
+&kp TILDE  &kp GRAVE  &kp POUND  &kp SEMI   &kp COLON   &none  &none                                  &none  &none  &kp BSLH  &kp FSLH  &kp PIPE   &none           &none
+&none      &kp PRCNT  &kp DLLR   &kp SQT    &kp DQT     &none  &none                                  &none  &none  &kp LBKT  &kp RBKT  &kp LT     &kp GT          &none
+&none      &kp AT     &kp AMPS   &kp COMMA  &kp PERIOD  &none  &none  &none  &none      &none  &none  &none  &none  &kp LPAR  &kp RPAR  &kp MINUS  &kp UNDERSCORE  &none
+&none      &kp CARET  &kp ASTRK  &kp EXCL   &kp QMARK   &none                &none      &none                &none  &kp LBRC  &kp RBRC  &kp EQUAL  &kp PLUS        &none
+&none      &none      &none      &none      &none              &none  &none  &none      &none  &none  &none         &none     &none     &none      &none           &none
             >;
         };
 
