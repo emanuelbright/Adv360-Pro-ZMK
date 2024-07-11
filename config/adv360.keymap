@@ -77,7 +77,14 @@
         };
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        combo_lock_user {
+            bindings = <&kp LG(L)>;
+            key-positions = <6>;
+        };
+    };
 
     macros {
         start_calculator: start_calculator {
