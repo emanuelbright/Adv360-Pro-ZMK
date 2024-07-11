@@ -93,42 +93,50 @@
         align_win_up: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RWIN &kp UP>;
+            bindings = <&kp RWIN &kp UP>, <&macro_tap>;
+
             label = "NEW_MACRO";
         };
 
         align_win_down: align_win_down {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RWIN &kp DOWN>;
+            bindings = <&kp RWIN &kp DOWN>, <&macro_tap>;
+
             label = "ALIGN_WIN_DOWN";
         };
 
         align_win_left: align_win_left {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LWIN &kp LEFT>;
+            bindings = <&kp LWIN &kp LEFT>, <&macro_tap>;
+
             label = "ALIGN_WIN_LEFT";
         };
 
         align_win_right: align_win_right {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LWIN &kp RIGHT>;
+            bindings = <&kp LWIN &kp RIGHT>, <&macro_tap>;
+
             label = "ALIGN_WIN_RIGHT";
         };
 
         start_calculator: start_calculator {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LWIN &kp C &kp A &kp L &kp C &kp U &kp L &kp A &kp T &kp O &kp R &kp ENTER>;
+            bindings =
+                <&kp LWIN &kp C &kp A &kp L &kp C &kp U &kp L &kp A &kp T &kp O &kp R &kp ENTER>,
+                <&macro_tap>;
+
             label = "START_CALCULATOR";
         };
 
         lock_user: lock_user {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LWIN &kp L>;
+            bindings = <&kp LWIN &kp L>, <&macro_tap>;
+
             label = "LOCK_USER";
         };
     };
