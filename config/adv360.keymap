@@ -83,6 +83,7 @@
         combo_lock_user {
             bindings = <&kp LG(L)>;
             key-positions = <6>;
+            layers = <0>;
         };
     };
 
