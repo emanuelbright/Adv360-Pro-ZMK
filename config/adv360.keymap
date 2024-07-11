@@ -77,27 +77,35 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
+    combos { compatible = "zmk,combos"; };
 
-        align_window_up {
-            bindings = <&kp LEFT_WIN>;
-            key-positions = <71>;
+    macros {
+        align_win_up: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RWIN &kp UP>;
+            label = "NEW_MACRO";
         };
 
-        align_window_down {
-            bindings = <&kp RIGHT_WIN>;
-            key-positions = <72>;
+        align_win_down: align_win_down {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RWIN &kp DOWN>;
+            label = "ALIGN_WIN_DOWN";
         };
 
-        align_window_left {
-            bindings = <&kp LEFT_WIN>;
-            key-positions = <63>;
+        align_win_left: align_win_left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LWIN &kp LEFT>;
+            label = "ALIGN_WIN_LEFT";
         };
 
-        align_window_right {
-            bindings = <&kp LEFT_WIN>;
-            key-positions = <64>;
+        align_win_right: align_win_right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LWIN &kp RIGHT>;
+            label = "ALIGN_WIN_RIGHT";
         };
     };
 
@@ -136,11 +144,11 @@
 
         layer_fn {
             bindings = <
-&none       &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                                                                 &kp F7                  &kp F8  &kp F9          &kp F10   &kp F11   &kp F12  &none
-&none       &none         &none         &none         &none         &none         &none                                                                  &none                   &none   &none           &none     &none     &none    &none
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none   &rgb_ug RGB_TOG  &bl BL_TOG      &kp C_MUTE       &none        &rgb_ug RGB_MEFS_CMD 5  &none   &kp KP_NUMLOCK  &kp CAPS  &kp SLCK  &none    &none
-&none       &none         &none         &none         &macro_ver    &none                                  &bl BL_INC      &kp C_VOLUME_UP                                       &none   &none           &none     &none     &none    &none
-&trans      &none         &none         &none         &none                       &none   &bootloader      &bl BL_DEC      &kp C_VOL_DN     &bootloader  &none                           &none           &none     &none     &none    &trans
+&none       &kp F1        &kp F2        &kp F3           &kp F4            &kp F5        &kp F6                                                                 &kp F7                  &kp F8  &kp F9          &kp F10          &kp F11   &kp F12  &none
+&none       &none         &none         &none            &none             &none         &none                                                                  &none                   &none   &none           &none            &none     &none    &none
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2     &bt BT_SEL 3      &bt BT_SEL 4  &none   &rgb_ug RGB_TOG  &bl BL_TOG      &kp C_MUTE       &none        &rgb_ug RGB_MEFS_CMD 5  &none   &kp KP_NUMLOCK  &kp CAPS         &kp SLCK  &none    &none
+&none       &none         &none         &none            &macro_ver        &none                                  &bl BL_INC      &kp C_VOLUME_UP                                       &none   &none           &none            &none     &none    &none
+&trans      &none         &none         &align_win_left  &align_win_right                &none   &bootloader      &bl BL_DEC      &kp C_VOL_DN     &bootloader  &none                           &align_win_up   &align_win_down  &none     &none    &trans
             >;
         };
     };
