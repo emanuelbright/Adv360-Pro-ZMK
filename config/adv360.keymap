@@ -124,10 +124,10 @@
 
         layer_keypad {
             bindings = <
-&trans  &none       &kp LPAR  &kp RPAR  &kp FSLH  &none      &trans                                                         &trans         &none      &kp LPAR  &kp RPAR  &kp FSLH  &none      &trans
-&trans  &kp EQUAL   &kp N7    &kp N8    &kp N9    &kp ASTRK  &trans                                                         &trans         &kp EQUAL  &kp N7    &kp N8    &kp N9    &kp ASTRK  &trans
-&trans  &kp PERIOD  &kp N4    &kp N5    &kp N6    &kp PLUS   &trans         &trans     &trans         &trans     &trans     &trans         &kp DOT    &kp N4    &kp N5    &kp N6    &kp PLUS   &trans
-&trans  &kp N0      &kp N1    &kp N2    &kp N3    &kp MINUS                            &kp CLEAR      &kp CLEAR                            &kp N0     &kp N1    &kp N2    &kp N3    &kp MINUS  &trans
+&none   &none       &kp LPAR  &kp RPAR  &kp FSLH  &none      &trans                                                         &trans         &none      &kp LPAR  &kp RPAR  &kp FSLH  &none      &none
+&trans  &kp EQUAL   &kp N7    &kp N8    &kp N9    &kp ASTRK  &trans                                                         &trans         &kp EQUAL  &kp N7    &kp N8    &kp N9    &kp ASTRK  &kp TAB
+&trans  &kp PERIOD  &kp N4    &kp N5    &kp N6    &kp PLUS   &trans         &trans     &trans         &trans     &trans     &trans         &kp DOT    &kp N4    &kp N5    &kp N6    &kp PLUS   &kp ESC
+&trans  &kp N0      &kp N1    &kp N2    &kp N3    &kp MINUS                            &kp CLEAR      &kp CLEAR                            &kp N0     &kp N1    &kp N2    &kp N3    &kp MINUS  &kp RIGHT_SHIFT
 &trans  &none       &none     &trans    &trans               &kp BACKSPACE  &kp ENTER  &trans         &trans     &kp ENTER  &kp BACKSPACE             &trans    &trans    &none     &none      &trans
             >;
         };
