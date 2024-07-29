@@ -124,11 +124,11 @@
 
         layer_keypad {
             bindings = <
-&none  &none       &kp LPAR  &kp RPAR  &kp FSLH  &none      &none                                                          &none          &none      &kp LPAR  &kp RPAR  &kp FSLH  &none      &none
-&none  &kp EQUAL   &kp N7    &kp N8    &kp N9    &kp ASTRK  &none                                                          &none          &kp EQUAL  &kp N7    &kp N8    &kp N9    &kp ASTRK  &none
-&none  &kp PERIOD  &kp N4    &kp N5    &kp N6    &kp PLUS   &none          &none      &none          &none      &none      &none          &kp DOT    &kp N4    &kp N5    &kp N6    &kp PLUS   &none
-&none  &kp N0      &kp N1    &kp N2    &kp N3    &kp MINUS                            &kp CLEAR      &kp CLEAR                            &kp N0     &kp N1    &kp N2    &kp N3    &kp MINUS  &none
-&none  &none       &none     &trans    &trans               &kp BACKSPACE  &kp ENTER  &none          &trans     &kp ENTER  &kp BACKSPACE             &trans    &trans    &none     &none      &none
+&trans  &none       &kp LPAR  &kp RPAR  &kp FSLH  &none      &trans                                                         &trans         &none      &kp LPAR  &kp RPAR  &kp FSLH  &none      &trans
+&trans  &kp EQUAL   &kp N7    &kp N8    &kp N9    &kp ASTRK  &trans                                                         &trans         &kp EQUAL  &kp N7    &kp N8    &kp N9    &kp ASTRK  &trans
+&trans  &kp PERIOD  &kp N4    &kp N5    &kp N6    &kp PLUS   &trans         &trans     &trans         &trans     &trans     &trans         &kp DOT    &kp N4    &kp N5    &kp N6    &kp PLUS   &trans
+&trans  &kp N0      &kp N1    &kp N2    &kp N3    &kp MINUS                            &kp CLEAR      &kp CLEAR                            &kp N0     &kp N1    &kp N2    &kp N3    &kp MINUS  &trans
+&trans  &none       &none     &trans    &trans               &kp BACKSPACE  &kp ENTER  &trans         &trans     &kp ENTER  &kp BACKSPACE             &trans    &trans    &none     &none      &trans
             >;
         };
 
