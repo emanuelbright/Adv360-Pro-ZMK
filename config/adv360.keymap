@@ -172,54 +172,42 @@
             compatible = "zmk,behavior-tap-dance";
             label = "Q_KEY";
             #binding-cells = <0>;
-            bindings = <&mt LS(Q) Q>, <&mt LC(Q) Q>, <&mt LA(Q) Q>;
-
-            tapping-term-ms = <200>;
+            bindings = <&kp Q>, <&mt LS(Q) Q>, <&mt LC(Q) Q>, <&mt LA(Q) Q>;
         };
 
         w_key: w_key {
             compatible = "zmk,behavior-tap-dance";
             label = "W_KEY";
             #binding-cells = <0>;
-            bindings = <&mt LS(W) W>, <&mt LC(W) W>, <&mt LA(W) W>;
-
-            tapping-term-ms = <200>;
+            bindings = <&kp W>, <&mt LS(W) W>, <&mt LC(W) W>, <&mt LA(W) W>;
         };
 
         f_key: f_key {
             compatible = "zmk,behavior-tap-dance";
             label = "F_KEY";
             #binding-cells = <0>;
-            bindings = <&mt LS(F) F>, <&mt LC(F) F>, <&mt LA(F) F>;
-
-            tapping-term-ms = <200>;
+            bindings = <&kp F>, <&mt LS(F) F>, <&mt LC(F) F>, <&mt LA(F) F>;
         };
 
         p_key: p_key {
             compatible = "zmk,behavior-tap-dance";
             label = "P_KEY";
             #binding-cells = <0>;
-            bindings = <&mt LS(P) P>, <&mt LC(P) P>, <&mt LA(P) P>;
-
-            tapping-term-ms = <200>;
+            bindings = <&kp P>, <&mt LS(P) P>, <&mt LC(P) P>, <&mt LA(P) P>;
         };
 
         b_key: b_key {
             compatible = "zmk,behavior-tap-dance";
             label = "B_KEY";
             #binding-cells = <0>;
-            bindings = <&mt LS(B) B>, <&mt LC(B) B>, <&mt LA(B) B>;
-
-            tapping-term-ms = <200>;
+            bindings = <&kp B>, <&mt LS(B) B>, <&mt LC(B) B>, <&mt LA(B) B>;
         };
 
         j_key: j_key {
             compatible = "zmk,behavior-tap-dance";
             label = "J_KEY";
             #binding-cells = <0>;
-            bindings = <&mt LC(J) J>, <&kp LS(J)>;
-
-            tapping-term-ms = <100>;
+            bindings = <&kp J>, <&kp LS(J)>, <&mt LC(J) J>, <&mt LA(J) J>;
         };
 
         l_key: l_key {
@@ -271,7 +259,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "S_KEY";
             #binding-cells = <0>;
-            bindings = <&mt LS(S) S>, <&mt LC(S) S>, <&mt LC(S) S>;
+            bindings = <&mt LS(S) S>, <&mt LC(S) S>, <&mt LA(S) S>;
 
             tapping-term-ms = <200>;
         };
