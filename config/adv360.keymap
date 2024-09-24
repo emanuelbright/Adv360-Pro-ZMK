@@ -172,7 +172,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "Q_KEY";
             #binding-cells = <0>;
-            bindings = <&mt LS(Q) Q>, <&kp LC(Q)>;
+            bindings = <&mt LS(Q) Q>, <&none>, <&kp LC(Q)>;
 
             tapping-term-ms = <400>;
         };
@@ -181,7 +181,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "W_KEY";
             #binding-cells = <0>;
-            bindings = <&mt LS(W) W>, <&kp LC(W)>;
+            bindings = <&mt LS(W) W>, <&none>, <&kp LC(W)>;
 
             tapping-term-ms = <400>;
         };
@@ -190,7 +190,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "F_KEY";
             #binding-cells = <0>;
-            bindings = <&mt LS(F) F>, <&kp LC(F)>;
+            bindings = <&mt LS(F) F>, <&none>, <&kp LC(F)>;
 
             tapping-term-ms = <400>;
         };
@@ -199,7 +199,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "P_KEY";
             #binding-cells = <0>;
-            bindings = <&mt LS(P) P>, <&kp LC(P)>;
+            bindings = <&mt LS(P) P>, <&none>, <&kp LC(P)>;
 
             tapping-term-ms = <400>;
         };
@@ -208,7 +208,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "B_KEY";
             #binding-cells = <0>;
-            bindings = <&mt LS(B) B>, <&kp LC(B)>;
+            bindings = <&mt LS(B) B>, <&none>, <&kp LC(B)>;
 
             tapping-term-ms = <400>;
         };
@@ -253,7 +253,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "A_KEY";
             #binding-cells = <0>;
-            bindings = <&mt LS(A) A>, <&kp LC(A)>;
+            bindings = <&mt LS(A) A>, <&kp LC(A)>, <&kp LC(A)>;
 
             tapping-term-ms = <400>;
         };
@@ -262,7 +262,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "R_KEY";
             #binding-cells = <0>;
-            bindings = <&mt LS(R) R>, <&kp LC(R)>;
+            bindings = <&mt LS(R) R>, <&none>, <&kp LC(R)>;
 
             tapping-term-ms = <400>;
         };
@@ -271,7 +271,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "S_KEY";
             #binding-cells = <0>;
-            bindings = <&mt LS(S) S>, <&kp LC(S)>;
+            bindings = <&mt LS(S) S>, <&none>, <&kp LC(S)>;
 
             tapping-term-ms = <400>;
         };
@@ -280,7 +280,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "T_KEY";
             #binding-cells = <0>;
-            bindings = <&mt LS(T) T>, <&kp LC(T)>;
+            bindings = <&mt LS(T) T>, <&none>, <&kp LC(T)>;
 
             tapping-term-ms = <400>;
         };
@@ -289,9 +289,9 @@
             compatible = "zmk,behavior-tap-dance";
             label = "G_KEY";
             #binding-cells = <0>;
-            bindings = <&mt LS(G) G>, <&kp LC(G)>;
+            bindings = <&mt LS(G) G>, <&none>, <&kp LC(G)>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <400>;
         };
 
         m_key: m_key {
