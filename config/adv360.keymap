@@ -165,14 +165,22 @@
             compatible = "zmk,behavior-tap-dance";
             label = "SIX_KEY";
             #binding-cells = <0>;
-            bindings = <&mt LC(NUMBER_6) NUMBER_6>, <&kp CARET>;
+            bindings =
+                <&kp NUMBER_6>,
+                <&mt RS(NUMBER_6) NUMBER_6>,
+                <&mt RC(NUMBER_6) NUMBER_6>,
+                <&mt RA(NUMBER_6) NUMBER_6>;
         };
 
         seven_key: seven_key {
             compatible = "zmk,behavior-tap-dance";
             label = "SEVEN_KEY";
             #binding-cells = <0>;
-            bindings = <&mt LC(NUMBER_7) NUMBER_7>, <&kp AMPERSAND>;
+            bindings =
+                <&kp NUMBER_7>,
+                <&mt RS(NUMBER_7) NUMBER_7>,
+                <&mt RC(NUMBER_7) NUMBER_7>,
+                <&mt RA(NUMBER_7) NUMBER_7>;
         };
 
         eight_key: eight_key {
