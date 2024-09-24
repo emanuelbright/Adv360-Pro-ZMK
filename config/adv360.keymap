@@ -98,13 +98,6 @@
             bindings = <&kp EQUAL>, <&kp PLUS>;
         };
 
-        Z_Key: Z_Key {
-            compatible = "zmk,behavior-tap-dance";
-            label = "Z_KEY";
-            #binding-cells = <0>;
-            bindings = <&mt LC(Z) Z>, <&kp LS(Z)>;
-        };
-
         one_key: one_key {
             compatible = "zmk,behavior-tap-dance";
             label = "ONE_KEY";
@@ -243,6 +236,118 @@
             label = "A_KEY";
             #binding-cells = <0>;
             bindings = <&mt LC(A) A>, <&kp LS(A)>;
+        };
+
+        r_key: r_key {
+            compatible = "zmk,behavior-tap-dance";
+            label = "R_KEY";
+            #binding-cells = <0>;
+            bindings = <&mt LC(R) R>, <&kp LS(R)>;
+        };
+
+        s_key: s_key {
+            compatible = "zmk,behavior-tap-dance";
+            label = "S_KEY";
+            #binding-cells = <0>;
+            bindings = <&mt LC(S) S>, <&kp LS(S)>;
+        };
+
+        t_key: t_key {
+            compatible = "zmk,behavior-tap-dance";
+            label = "T_KEY";
+            #binding-cells = <0>;
+            bindings = <&mt LC(T) T>, <&kp LS(T)>;
+        };
+
+        g_key: g_key {
+            compatible = "zmk,behavior-tap-dance";
+            label = "G_KEY";
+            #binding-cells = <0>;
+            bindings = <&mt LC(G) G>, <&kp LS(G)>;
+        };
+
+        m_key: m_key {
+            compatible = "zmk,behavior-tap-dance";
+            label = "M_KEY";
+            #binding-cells = <0>;
+            bindings = <&mt LC(M) M>, <&kp LS(M)>;
+        };
+
+        n_key: n_key {
+            compatible = "zmk,behavior-tap-dance";
+            label = "N_KEY";
+            #binding-cells = <0>;
+            bindings = <&mt LC(N) N>, <&kp LS(N)>;
+        };
+
+        e_key: e_key {
+            compatible = "zmk,behavior-tap-dance";
+            label = "E_KEY";
+            #binding-cells = <0>;
+            bindings = <&mt LC(E) E>, <&kp LS(E)>;
+        };
+
+        i_key: i_key {
+            compatible = "zmk,behavior-tap-dance";
+            label = "I_KEY";
+            #binding-cells = <0>;
+            bindings = <&mt LC(I) I>, <&kp LS(I)>;
+        };
+
+        o_key: o_key {
+            compatible = "zmk,behavior-tap-dance";
+            label = "O_KEY";
+            #binding-cells = <0>;
+            bindings = <&mt LC(O) O>, <&kp LS(O)>;
+        };
+
+        z_key: z_key {
+            compatible = "zmk,behavior-tap-dance";
+            label = "Z_KEY";
+            #binding-cells = <0>;
+            bindings = <&mt LC(Z) Z>, <&kp LS(Z)>;
+        };
+
+        x_key: x_key {
+            compatible = "zmk,behavior-tap-dance";
+            label = "X_KEY";
+            #binding-cells = <0>;
+            bindings = <&mt LC(X) X>, <&kp LS(X)>;
+        };
+
+        c_key: c_key {
+            compatible = "zmk,behavior-tap-dance";
+            label = "C_KEY";
+            #binding-cells = <0>;
+            bindings = <&mt LC(C) C>, <&kp LS(C)>;
+        };
+
+        d_key: d_key {
+            compatible = "zmk,behavior-tap-dance";
+            label = "D_KEY";
+            #binding-cells = <0>;
+            bindings = <&mt LC(D) D>, <&kp LS(D)>;
+        };
+
+        v_key: v_key {
+            compatible = "zmk,behavior-tap-dance";
+            label = "V_KEY";
+            #binding-cells = <0>;
+            bindings = <&mt LC(V) V>, <&kp LS(V)>;
+        };
+
+        k_key: k_key {
+            compatible = "zmk,behavior-tap-dance";
+            label = "K_KEY";
+            #binding-cells = <0>;
+            bindings = <&mt LC(K) K>, <&kp LS(K)>;
+        };
+
+        h_key: h_key {
+            compatible = "zmk,behavior-tap-dance";
+            label = "H_KEY";
+            #binding-cells = <0>;
+            bindings = <&mt LC(H) H>, <&kp LS(H)>;
         };
     };
 
