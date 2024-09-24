@@ -187,21 +187,33 @@
             compatible = "zmk,behavior-tap-dance";
             label = "EIGHT_KEY";
             #binding-cells = <0>;
-            bindings = <&mt LC(NUMBER_8) NUMBER_8>, <&kp ASTERISK>;
+            bindings =
+                <&kp NUMBER_8>,
+                <&mt RS(NUMBER_8) NUMBER_8>,
+                <&mt RC(NUMBER_8) NUMBER_8>,
+                <&mt RA(NUMBER_8) NUMBER_8>;
         };
 
         nine_key: nine_key {
             compatible = "zmk,behavior-tap-dance";
             label = "NINE_KEY";
             #binding-cells = <0>;
-            bindings = <&mt LC(NUMBER_9) NUMBER_9>, <&kp LEFT_PARENTHESIS>;
+            bindings =
+                <&kp NUMBER_9>,
+                <&mt RS(NUMBER_9) NUMBER_9>,
+                <&mt RC(NUMBER_9) NUMBER_9>,
+                <&mt RA(NUMBER_9) NUMBER_9>;
         };
 
         zero_key: zero_key {
             compatible = "zmk,behavior-tap-dance";
             label = "ZERO_KEY";
             #binding-cells = <0>;
-            bindings = <&mt LC(NUMBER_0) NUMBER_0>, <&kp RIGHT_PARENTHESIS>;
+            bindings =
+                <&kp NUMBER_0>,
+                <&mt RS(NUMBER_0) NUMBER_0>,
+                <&mt RC(NUMBER_0) NUMBER_0>,
+                <&mt RA(NUMBER_0) NUMBER_0>;
         };
 
         q_key: q_key {
