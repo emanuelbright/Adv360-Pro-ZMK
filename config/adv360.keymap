@@ -349,6 +349,20 @@
             #binding-cells = <0>;
             bindings = <&mt LC(H) H>, <&kp LS(H)>;
         };
+
+        semicolon_key: semicolon_key {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SEMICOLON_KEY";
+            #binding-cells = <0>;
+            bindings = <&mt LC(SEMICOLON) SEMICOLON>, <&kp COLON>;
+        };
+
+        backslash_key: backslash_key {
+            compatible = "zmk,behavior-tap-dance";
+            label = "BACKSLASH_KEY";
+            #binding-cells = <0>;
+            bindings = <&mt LC(BACKSLASH) BACKSLASH>, <&kp PIPE>;
+        };
     };
 
     combos { compatible = "zmk,combos"; };
