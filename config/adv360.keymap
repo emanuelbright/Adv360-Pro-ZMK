@@ -404,28 +404,44 @@
             compatible = "zmk,behavior-tap-dance";
             label = "SINGLE_QUOTE_KEY";
             #binding-cells = <0>;
-            bindings = <&mt LC(SINGLE_QUOTE) SINGLE_QUOTE>, <&kp DOUBLE_QUOTES>;
+            bindings =
+                <&kp SINGLE_QUOTE>,
+                <&mt LS(SINGLE_QUOTE) SINGLE_QUOTE>,
+                <&mt RC(SINGLE_QUOTE) SINGLE_QUOTE>,
+                <&mt RA(SINGLE_QUOTE) SINGLE_QUOTE>;
         };
 
         comma_key: comma_key {
             compatible = "zmk,behavior-tap-dance";
             label = "COMMA_KEY";
             #binding-cells = <0>;
-            bindings = <&mt LC(COMMA) COMMA>, <&kp COMMA>;
+            bindings =
+                <&kp COMMA>,
+                <&mt RS(COMMA) COMMA>,
+                <&mt RC(COMMA) COMMA>,
+                <&mt RA(COMMA) COMMA>;
         };
 
         period_key: period_key {
             compatible = "zmk,behavior-tap-dance";
             label = "PERIOD_KEY";
             #binding-cells = <0>;
-            bindings = <&mt LC(PERIOD) PERIOD>, <&kp PERIOD>;
+            bindings =
+                <&kp PERIOD>,
+                <&mt RS(PERIOD) PERIOD>,
+                <&mt RC(PERIOD) PERIOD>,
+                <&mt RA(PERIOD) PERIOD>;
         };
 
         slash_key: slash_key {
             compatible = "zmk,behavior-tap-dance";
             label = "SLASH_KEY";
             #binding-cells = <0>;
-            bindings = <&mt LC(SLASH) SLASH>, <&kp SLASH>;
+            bindings =
+                <&kp SLASH>,
+                <&mt LS(SLASH) SLASH>,
+                <&mt RC(SLASH) SLASH>,
+                <&mt RA(SLASH) SLASH>;
         };
 
         grave_key: grave_key {
@@ -443,14 +459,22 @@
             compatible = "zmk,behavior-tap-dance";
             label = "LEFT_BRACKET_KEY";
             #binding-cells = <0>;
-            bindings = <&mt LC(LEFT_BRACKET) LEFT_BRACKET>, <&kp LEFT_BRACE>;
+            bindings =
+                <&kp LEFT_BRACKET>,
+                <&mt RS(LEFT_BRACKET) LEFT_BRACKET>,
+                <&mt RC(LEFT_BRACKET) LEFT_BRACKET>,
+                <&mt RA(LEFT_BRACKET) LEFT_BRACKET>;
         };
 
         right_bracket_key: right_bracket_key {
             compatible = "zmk,behavior-tap-dance";
             label = "RIGHT_BRACKET_KEY";
             #binding-cells = <0>;
-            bindings = <&mt LC(RIGHT_BRACE) RIGHT_BRACE>, <&kp RIGHT_BRACE>;
+            bindings =
+                <&kp RIGHT_BRACKET>,
+                <&mt RS(RIGHT_BRACKET) RIGHT_BRACKET>,
+                <&mt RC(RIGHT_BRACKET) RIGHT_BRACKET>,
+                <&mt RA(RIGHT_BRACKET) RIGHT_BRACKET>;
         };
     };
 
