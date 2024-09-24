@@ -121,28 +121,44 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TWO_KEY";
             #binding-cells = <0>;
-            bindings = <&mt LC(NUMBER_2) NUMBER_2>, <&kp AT_SIGN>;
+            bindings =
+                <&kp NUMBER_2>,
+                <&mt LS(NUMBER_2) NUMBER_2>,
+                <&mt LC(NUMBER_2) NUMBER_2>,
+                <&mt LA(NUMBER_2) NUMBER_2>;
         };
 
         three_key: three_key {
             compatible = "zmk,behavior-tap-dance";
             label = "THREE_KEY";
             #binding-cells = <0>;
-            bindings = <&mt LC(NUMBER_3) NUMBER_3>, <&kp HASH>;
+            bindings =
+                <&kp NUMBER_3>,
+                <&mt LS(NUMBER_3) NUMBER_3>,
+                <&mt LC(NUMBER_3) NUMBER_3>,
+                <&mt LA(NUMBER_3) NUMBER_3>;
         };
 
         four_key: four_key {
             compatible = "zmk,behavior-tap-dance";
             label = "FOUR_KEY";
             #binding-cells = <0>;
-            bindings = <&mt LC(NUMBER_4) NUMBER_4>, <&kp DOLLAR>;
+            bindings =
+                <&kp NUMBER_4>,
+                <&mt LS(NUMBER_4) NUMBER_4>,
+                <&mt LC(NUMBER_4) NUMBER_4>,
+                <&mt LA(NUMBER_4) NUMBER_4>;
         };
 
         five_key: five_key {
             compatible = "zmk,behavior-tap-dance";
             label = "FIVE_KEY";
             #binding-cells = <0>;
-            bindings = <&mt LC(NUMBER_5) NUMBER_5>, <&kp PERCENT>;
+            bindings =
+                <&kp NUMBER_5>,
+                <&mt LS(NUMBER_5) NUMBER_5>,
+                <&mt LC(NUMBER_5) NUMBER_5>,
+                <&mt LA(NUMBER_5) NUMBER_5>;
         };
 
         six_key: six_key {
@@ -366,14 +382,22 @@
             compatible = "zmk,behavior-tap-dance";
             label = "SEMICOLON_KEY";
             #binding-cells = <0>;
-            bindings = <&mt LC(SEMICOLON) SEMICOLON>, <&kp COLON>;
+            bindings =
+                <&kp SEMICOLON>,
+                <&mt RS(SEMICOLON) SEMICOLON>,
+                <&mt RC(SEMICOLON) SEMICOLON>,
+                <&mt RA(SEMICOLON) SEMICOLON>;
         };
 
         backslash_key: backslash_key {
             compatible = "zmk,behavior-tap-dance";
             label = "BACKSLASH_KEY";
             #binding-cells = <0>;
-            bindings = <&mt LC(BACKSLASH) BACKSLASH>, <&kp PIPE>;
+            bindings =
+                <&kp BACKSLASH>,
+                <&mt RS(BACKSLASH) BACKSLASH>,
+                <&mt RC(BACKSLASH) BACKSLASH>,
+                <&mt RA(BACKSLASH) BACKSLASH>;
         };
 
         single_quote_key: single_quote_key {
@@ -408,7 +432,11 @@
             compatible = "zmk,behavior-tap-dance";
             label = "GRAVE_KEY";
             #binding-cells = <0>;
-            bindings = <&mt LC(GRAVE) GRAVE>, <&kp TILDE>;
+            bindings =
+                <&kp GRAVE>,
+                <&mt LS(GRAVE) GRAVE>,
+                <&mt LC(GRAVE) GRAVE>,
+                <&mt LA(GRAVE) GRAVE>;
         };
 
         left_bracket_key: left_bracket_key {
