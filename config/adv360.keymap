@@ -363,6 +363,34 @@
             #binding-cells = <0>;
             bindings = <&mt LC(BACKSLASH) BACKSLASH>, <&kp PIPE>;
         };
+
+        single_quote_key: single_quote_key {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SINGLE_QUOTE_KEY";
+            #binding-cells = <0>;
+            bindings = <&mt LC(SINGLE_QUOTE) SINGLE_QUOTE>, <&kp DOUBLE_QUOTES>;
+        };
+
+        comma_key: comma_key {
+            compatible = "zmk,behavior-tap-dance";
+            label = "COMMA_KEY";
+            #binding-cells = <0>;
+            bindings = <&mt LC(COMMA) COMMA>, <&kp COMMA>;
+        };
+
+        period_key: period_key {
+            compatible = "zmk,behavior-tap-dance";
+            label = "PERIOD_KEY";
+            #binding-cells = <0>;
+            bindings = <&mt LC(PERIOD) PERIOD>, <&kp PERIOD>;
+        };
+
+        slash_key: slash_key {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SLASH_KEY";
+            #binding-cells = <0>;
+            bindings = <&mt LC(SLASH) SLASH>, <&kp SLASH>;
+        };
     };
 
     combos { compatible = "zmk,combos"; };
