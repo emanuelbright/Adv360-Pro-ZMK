@@ -584,5 +584,15 @@
 &mo 3           &mt K_CONTEXT_MENU CAPSLOCK  &mt TILDE GRAVE  &kp LEFT            &kp RIGHT                      &kp BACKSPACE                 &kp SPACE         &tap_and_tog 2 END      &tap_and_tog 2 PG_DN  &kp ENTER          &kp DELETE                                         &kp UP            &kp DOWN             &mt LEFT_BRACE LBKT      &mt RIGHT_BRACE RBKT      &mo 3
             >;
         };
+
+        layer_7 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+            >;
+        };
     };
 };
