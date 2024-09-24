@@ -433,11 +433,11 @@
 
         default_layer {
             bindings = <
-&none           &one_key                     &two_key    &three_key  &four_key  &five_key  &minus_key                                                                                                       &equal_key                     &six_key  &seven_key  &eight_key  &nine_key            &zero_key             &kp PSCRN
-&kp TAB         &q_key                       &w_key      &f_key      &p_key     &b_key     &paran_brack_brace_chev_left                                                                                     &paran_brack_brace_chev_right  &j_key    &l_key      &u_key      &y_key               &semicolon_key        &mt PIPE BSLH
-&kp ESCAPE      &a_key                       &r_key      &s_key      &t_key     &g_key     &kp LALT                      &kp LEFT_CONTROL  &kp LEFT_GUI            &kp LEFT_GUI          &kp RIGHT_CONTROL  &kp RALT                       &m_key    &n_key      &e_key      &i_key               &o_key                &single_quote_key
-&kp LEFT_SHIFT  &z_key                       &x_key      &c_key      &d_key     &v_key                                                     &tap_and_mo 1 HOME      &tap_and_mo 1 PG_UP                                                     &k_key    &h_key      &comma_key  &period_key          &slash_key            &kp RIGHT_SHIFT
-&mo 3           &mt K_CONTEXT_MENU CAPSLOCK  &grave_key  &kp LEFT    &kp RIGHT             &kp BACKSPACE                 &kp SPACE         &tap_and_tog 2 END      &tap_and_tog 2 PG_DN  &kp ENTER          &kp DELETE                               &kp UP      &kp DOWN    &mt LEFT_BRACE LBKT  &mt RIGHT_BRACE RBKT  &mo 3
+&none           &one_key                     &two_key    &three_key  &four_key  &five_key  &minus_key                                                                                                       &equal_key                     &six_key  &seven_key  &eight_key  &nine_key          &zero_key           &kp PSCRN
+&kp TAB         &q_key                       &w_key      &f_key      &p_key     &b_key     &paran_brack_brace_chev_left                                                                                     &paran_brack_brace_chev_right  &j_key    &l_key      &u_key      &y_key             &semicolon_key      &backslash_key
+&kp ESCAPE      &a_key                       &r_key      &s_key      &t_key     &g_key     &kp LALT                      &kp LEFT_CONTROL  &kp LEFT_GUI            &kp LEFT_GUI          &kp RIGHT_CONTROL  &kp RALT                       &m_key    &n_key      &e_key      &i_key             &o_key              &single_quote_key
+&kp LEFT_SHIFT  &z_key                       &x_key      &c_key      &d_key     &v_key                                                     &tap_and_mo 1 HOME      &tap_and_mo 1 PG_UP                                                     &k_key    &h_key      &comma_key  &period_key        &slash_key          &kp RIGHT_SHIFT
+&mo 3           &mt K_CONTEXT_MENU CAPSLOCK  &grave_key  &kp LEFT    &kp RIGHT             &kp BACKSPACE                 &kp SPACE         &tap_and_tog 2 END      &tap_and_tog 2 PG_DN  &kp ENTER          &kp DELETE                               &kp UP      &kp DOWN    &left_bracket_key  &right_bracket_key  &mo 3
             >;
         };
 
