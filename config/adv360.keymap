@@ -391,6 +391,27 @@
             #binding-cells = <0>;
             bindings = <&mt LC(SLASH) SLASH>, <&kp SLASH>;
         };
+
+        grave_key: grave_key {
+            compatible = "zmk,behavior-tap-dance";
+            label = "GRAVE_KEY";
+            #binding-cells = <0>;
+            bindings = <&mt LC(GRAVE) GRAVE>, <&kp TILDE>;
+        };
+
+        left_bracket_key: left_bracket_key {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LEFT_BRACKET_KEY";
+            #binding-cells = <0>;
+            bindings = <&mt LC(LEFT_BRACKET) LEFT_BRACKET>, <&kp LEFT_BRACE>;
+        };
+
+        right_bracket_key: right_bracket_key {
+            compatible = "zmk,behavior-tap-dance";
+            label = "RIGHT_BRACKET_KEY";
+            #binding-cells = <0>;
+            bindings = <&mt LC(RIGHT_BRACE) RIGHT_BRACE>, <&kp RIGHT_BRACE>;
+        };
     };
 
     combos { compatible = "zmk,combos"; };
