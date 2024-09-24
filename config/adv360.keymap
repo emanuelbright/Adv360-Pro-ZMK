@@ -139,6 +139,41 @@
             #binding-cells = <0>;
             bindings = <&mt LC(NUMBER_5) NUMBER_5>, <&kp PERCENT>;
         };
+
+        six_key: six_key {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SIX_KEY";
+            #binding-cells = <0>;
+            bindings = <&mt LC(NUMBER_6) NUMBER_6>, <&kp LCTRL>;
+        };
+
+        seven_key: seven_key {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SEVEN_KEY";
+            #binding-cells = <0>;
+            bindings = <&mt LC(NUMBER_7) NUMBER_7>, <&kp AMPERSAND>;
+        };
+
+        eight_key: eight_key {
+            compatible = "zmk,behavior-tap-dance";
+            label = "EIGHT_KEY";
+            #binding-cells = <0>;
+            bindings = <&mt LC(NUMBER_8) NUMBER_8>, <&kp ASTERISK>;
+        };
+
+        nine_key: nine_key {
+            compatible = "zmk,behavior-tap-dance";
+            label = "NINE_KEY";
+            #binding-cells = <0>;
+            bindings = <&mt LC(NUMBER_9) NUMBER_9>, <&kp LEFT_PARENTHESIS>;
+        };
+
+        zero_key: zero_key {
+            compatible = "zmk,behavior-tap-dance";
+            label = "ZERO_KEY";
+            #binding-cells = <0>;
+            bindings = <&mt LC(NUMBER_0) NUMBER_0>, <&kp RIGHT_PARENTHESIS>;
+        };
     };
 
     combos { compatible = "zmk,combos"; };
