@@ -104,6 +104,41 @@
             #binding-cells = <0>;
             bindings = <&mt LC(Z) Z>, <&kp LS(Z)>;
         };
+
+        one_key: one_key {
+            compatible = "zmk,behavior-tap-dance";
+            label = "ONE_KEY";
+            #binding-cells = <0>;
+            bindings = <&mt LC(NUMBER_1) NUMBER_1>, <&kp EXCLAMATION>;
+        };
+
+        two_key: two_key {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TWO_KEY";
+            #binding-cells = <0>;
+            bindings = <&mt LC(NUMBER_2) NUMBER_2>, <&kp AT_SIGN>;
+        };
+
+        three_key: three_key {
+            compatible = "zmk,behavior-tap-dance";
+            label = "THREE_KEY";
+            #binding-cells = <0>;
+            bindings = <&mt LC(NUMBER_3) NUMBER_3>, <&kp HASH>;
+        };
+
+        four_key: four_key {
+            compatible = "zmk,behavior-tap-dance";
+            label = "FOUR_KEY";
+            #binding-cells = <0>;
+            bindings = <&mt LC(NUMBER_4) NUMBER_4>, <&kp DOLLAR>;
+        };
+
+        five_key: five_key {
+            compatible = "zmk,behavior-tap-dance";
+            label = "FIVE_KEY";
+            #binding-cells = <0>;
+            bindings = <&mt LC(NUMBER_5) NUMBER_5>, <&kp PERCENT>;
+        };
     };
 
     combos { compatible = "zmk,combos"; };
