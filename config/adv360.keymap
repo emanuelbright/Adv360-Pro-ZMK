@@ -88,21 +88,33 @@
             compatible = "zmk,behavior-tap-dance";
             label = "MINUS_KEY";
             #binding-cells = <0>;
-            bindings = <&kp MINUS>, <&kp UNDERSCORE>;
+            bindings =
+                <&kp MINUS>,
+                <&mt LS(MINUS) MINUS>,
+                <&mt LC(MINUS) MINUS>,
+                <&mt LA(MINUS) MINUS>;
         };
 
         equal_key: equal_key {
             compatible = "zmk,behavior-tap-dance";
             label = "EQUAL_KEY";
             #binding-cells = <0>;
-            bindings = <&kp EQUAL>, <&kp PLUS>;
+            bindings =
+                <&kp EQUAL>,
+                <&mt RS(EQUAL) EQUAL>,
+                <&mt RC(EQUAL) EQUAL>,
+                <&mt RA(EQUAL) EQUAL>;
         };
 
         one_key: one_key {
             compatible = "zmk,behavior-tap-dance";
             label = "ONE_KEY";
             #binding-cells = <0>;
-            bindings = <&mt LC(NUMBER_1) NUMBER_1>, <&kp EXCLAMATION>;
+            bindings =
+                <&kp NUMBER_1>,
+                <&mt LS(NUMBER_1) NUMBER_1>,
+                <&mt LC(NUMBER_1) NUMBER_1>,
+                <&mt LA(NUMBER_1) NUMBER_1>;
         };
 
         two_key: two_key {
@@ -270,35 +282,35 @@
             compatible = "zmk,behavior-tap-dance";
             label = "M_KEY";
             #binding-cells = <0>;
-            bindings = <&mt LC(M) M>, <&kp LS(M)>;
+            bindings = <&kp M>, <&mt RS(M) M>, <&mt RC(M) M>, <&mt RA(M) M>;
         };
 
         n_key: n_key {
             compatible = "zmk,behavior-tap-dance";
             label = "N_KEY";
             #binding-cells = <0>;
-            bindings = <&mt LC(N) N>, <&kp LS(N)>;
+            bindings = <&kp N>, <&mt RS(N) N>, <&mt RC(N) N>, <&mt RS(N) N>;
         };
 
         e_key: e_key {
             compatible = "zmk,behavior-tap-dance";
             label = "E_KEY";
             #binding-cells = <0>;
-            bindings = <&mt LC(E) E>, <&kp LS(E)>;
+            bindings = <&kp E>, <&mt RS(E) E>, <&mt RC(E) E>, <&mt RA(E) E>;
         };
 
         i_key: i_key {
             compatible = "zmk,behavior-tap-dance";
             label = "I_KEY";
             #binding-cells = <0>;
-            bindings = <&mt LC(I) I>, <&kp LS(I)>;
+            bindings = <&kp I>, <&mt RS(I) I>, <&mt RC(I) I>, <&mt RA(I) I>;
         };
 
         o_key: o_key {
             compatible = "zmk,behavior-tap-dance";
             label = "O_KEY";
             #binding-cells = <0>;
-            bindings = <&mt LC(O) O>, <&kp LS(O)>;
+            bindings = <&kp O>, <&mt RS(O) O>, <&mt RC(O) O>, <&mt RA(O) O>;
         };
 
         z_key: z_key {
@@ -340,14 +352,14 @@
             compatible = "zmk,behavior-tap-dance";
             label = "K_KEY";
             #binding-cells = <0>;
-            bindings = <&mt LC(K) K>, <&kp LS(K)>;
+            bindings = <&kp K>, <&mt RS(K) K>, <&mt RC(K) K>, <&mt RA(K) K>;
         };
 
         h_key: h_key {
             compatible = "zmk,behavior-tap-dance";
             label = "H_KEY";
             #binding-cells = <0>;
-            bindings = <&mt LC(H) H>, <&kp LS(H)>;
+            bindings = <&kp H>, <&mt RS(H) H>, <&mt RC(H) H>, <&mt RA(H) H>;
         };
 
         semicolon_key: semicolon_key {
