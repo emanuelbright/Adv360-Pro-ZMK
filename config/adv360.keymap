@@ -17,7 +17,7 @@
 
 &mt {
     flavor = "tap-preferred";
-    tapping-term-ms = <400>;
+    tapping-term-ms = <250>;
 };
 
 / {
@@ -137,7 +137,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "SIX_KEY";
             #binding-cells = <0>;
-            bindings = <&mt LC(NUMBER_6) NUMBER_6>, <&kp LCTRL>;
+            bindings = <&mt LC(NUMBER_6) NUMBER_6>, <&kp CARET>;
         };
 
         seven_key: seven_key {
@@ -173,6 +173,8 @@
             label = "Q_KEY";
             #binding-cells = <0>;
             bindings = <&mt LC(Q) Q>, <&kp LS(Q)>;
+
+            tapping-term-ms = <50>;
         };
 
         w_key: w_key {
@@ -180,6 +182,8 @@
             label = "W_KEY";
             #binding-cells = <0>;
             bindings = <&mt LC(W) W>, <&kp LS(W)>;
+
+            tapping-term-ms = <50>;
         };
 
         f_key: f_key {
@@ -187,6 +191,8 @@
             label = "F_KEY";
             #binding-cells = <0>;
             bindings = <&mt LC(F) F>, <&kp LS(F)>;
+
+            tapping-term-ms = <50>;
         };
 
         p_key: p_key {
@@ -194,6 +200,8 @@
             label = "P_KEY";
             #binding-cells = <0>;
             bindings = <&mt LC(P) P>, <&kp LS(P)>;
+
+            tapping-term-ms = <50>;
         };
 
         b_key: b_key {
@@ -201,6 +209,8 @@
             label = "B_KEY";
             #binding-cells = <0>;
             bindings = <&mt LC(B) B>, <&kp LS(B)>;
+
+            tapping-term-ms = <50>;
         };
 
         j_key: j_key {
@@ -208,6 +218,8 @@
             label = "J_KEY";
             #binding-cells = <0>;
             bindings = <&mt LC(J) J>, <&kp LS(J)>;
+
+            tapping-term-ms = <50>;
         };
 
         l_key: l_key {
@@ -222,6 +234,8 @@
             label = "U_KEY";
             #binding-cells = <0>;
             bindings = <&mt LC(U) U>, <&kp LS(U)>;
+
+            tapping-term-ms = <50>;
         };
 
         y_key: y_key {
@@ -229,6 +243,8 @@
             label = "Y_KEY";
             #binding-cells = <0>;
             bindings = <&mt LC(Y) Y>, <&kp LS(Y)>;
+
+            tapping-term-ms = <50>;
         };
 
         a_key: a_key {
@@ -236,6 +252,8 @@
             label = "A_KEY";
             #binding-cells = <0>;
             bindings = <&mt LC(A) A>, <&kp LS(A)>;
+
+            tapping-term-ms = <50>;
         };
 
         r_key: r_key {
@@ -243,6 +261,8 @@
             label = "R_KEY";
             #binding-cells = <0>;
             bindings = <&mt LC(R) R>, <&kp LS(R)>;
+
+            tapping-term-ms = <50>;
         };
 
         s_key: s_key {
@@ -250,6 +270,8 @@
             label = "S_KEY";
             #binding-cells = <0>;
             bindings = <&mt LC(S) S>, <&kp LS(S)>;
+
+            tapping-term-ms = <50>;
         };
 
         t_key: t_key {
@@ -257,6 +279,8 @@
             label = "T_KEY";
             #binding-cells = <0>;
             bindings = <&mt LC(T) T>, <&kp LS(T)>;
+
+            tapping-term-ms = <50>;
         };
 
         g_key: g_key {
@@ -264,6 +288,8 @@
             label = "G_KEY";
             #binding-cells = <0>;
             bindings = <&mt LC(G) G>, <&kp LS(G)>;
+
+            tapping-term-ms = <50>;
         };
 
         m_key: m_key {
