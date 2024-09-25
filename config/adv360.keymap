@@ -17,7 +17,7 @@
 
 &mt {
     flavor = "tap-preferred";
-    tapping-term-ms = <100>;
+    tapping-term-ms = <150>;
 };
 
 / {
@@ -72,7 +72,7 @@
                 <&kp LEFT_BRACE>,
                 <&kp LESS_THAN>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
         };
 
         paran_brack_brace_chev_right: paran_brack_brace_chev_right {
@@ -85,7 +85,7 @@
                 <&kp RIGHT_BRACE>,
                 <&kp GREATER_THAN>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
         };
 
         minus_key: minus_key {
@@ -98,7 +98,7 @@
                 <&mt LC(MINUS) MINUS>,
                 <&mt LA(MINUS) MINUS>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
         };
 
         equal_key: equal_key {
@@ -111,7 +111,7 @@
                 <&mt RC(EQUAL) EQUAL>,
                 <&mt RA(EQUAL) EQUAL>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
         };
 
         one_key: one_key {
@@ -124,7 +124,7 @@
                 <&mt LC(NUMBER_1) NUMBER_1>,
                 <&mt LA(NUMBER_1) NUMBER_1>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
         };
 
         two_key: two_key {
@@ -137,7 +137,7 @@
                 <&mt LC(NUMBER_2) NUMBER_2>,
                 <&mt LA(NUMBER_2) NUMBER_2>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
         };
 
         three_key: three_key {
@@ -150,7 +150,7 @@
                 <&mt LC(NUMBER_3) NUMBER_3>,
                 <&mt LA(NUMBER_3) NUMBER_3>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
         };
 
         four_key: four_key {
@@ -163,7 +163,7 @@
                 <&mt LC(NUMBER_4) NUMBER_4>,
                 <&mt LA(NUMBER_4) NUMBER_4>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
         };
 
         five_key: five_key {
@@ -176,7 +176,7 @@
                 <&mt LC(NUMBER_5) NUMBER_5>,
                 <&mt LA(NUMBER_5) NUMBER_5>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
         };
 
         six_key: six_key {
@@ -189,7 +189,7 @@
                 <&mt RC(NUMBER_6) NUMBER_6>,
                 <&mt RA(NUMBER_6) NUMBER_6>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
         };
 
         seven_key: seven_key {
@@ -202,7 +202,7 @@
                 <&mt RC(NUMBER_7) NUMBER_7>,
                 <&mt RA(NUMBER_7) NUMBER_7>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
         };
 
         eight_key: eight_key {
@@ -215,7 +215,7 @@
                 <&mt RC(NUMBER_8) NUMBER_8>,
                 <&mt RA(NUMBER_8) NUMBER_8>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
         };
 
         nine_key: nine_key {
@@ -228,7 +228,7 @@
                 <&mt RC(NUMBER_9) NUMBER_9>,
                 <&mt RA(NUMBER_9) NUMBER_9>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
         };
 
         zero_key: zero_key {
@@ -241,7 +241,7 @@
                 <&mt RC(NUMBER_0) NUMBER_0>,
                 <&mt RA(NUMBER_0) NUMBER_0>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
         };
 
         q_key: q_key {
@@ -250,7 +250,7 @@
             #binding-cells = <0>;
             bindings = <&kp Q>, <&mt LS(Q) Q>, <&mt LC(Q) Q>, <&mt LA(Q) Q>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
         };
 
         w_key: w_key {
@@ -259,7 +259,7 @@
             #binding-cells = <0>;
             bindings = <&kp W>, <&mt LS(W) W>, <&mt LC(W) W>, <&mt LA(W) W>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
         };
 
         f_key: f_key {
@@ -268,7 +268,7 @@
             #binding-cells = <0>;
             bindings = <&kp F>, <&mt LS(F) F>, <&mt LC(F) F>, <&mt LA(F) F>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
         };
 
         p_key: p_key {
@@ -277,7 +277,7 @@
             #binding-cells = <0>;
             bindings = <&kp P>, <&mt LS(P) P>, <&mt LC(P) P>, <&mt LA(P) P>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
         };
 
         b_key: b_key {
@@ -286,7 +286,7 @@
             #binding-cells = <0>;
             bindings = <&kp B>, <&mt LS(B) B>, <&mt LC(B) B>, <&mt LA(B) B>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
         };
 
         j_key: j_key {
@@ -295,7 +295,7 @@
             #binding-cells = <0>;
             bindings = <&kp J>, <&mt RS(J) J>, <&mt RC(J) J>, <&mt RA(J) J>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
         };
 
         l_key: l_key {
@@ -304,7 +304,7 @@
             #binding-cells = <0>;
             bindings = <&kp L>, <&mt RS(L) L>, <&mt RC(L) L>, <&mt RA(L) L>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
         };
 
         u_key: u_key {
@@ -313,7 +313,7 @@
             #binding-cells = <0>;
             bindings = <&kp U>, <&mt RS(U) U>, <&mt RC(U) U>, <&mt RA(U) U>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
         };
 
         y_key: y_key {
@@ -322,7 +322,7 @@
             #binding-cells = <0>;
             bindings = <&kp Y>, <&mt RS(Y) Y>, <&mt RC(Y) Y>, <&mt RA(Y) Y>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
         };
 
         a_key: a_key {
@@ -331,7 +331,7 @@
             #binding-cells = <0>;
             bindings = <&kp A>, <&mt LS(A) A>, <&mt LC(A) A>, <&mt LA(A) A>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
         };
 
         r_key: r_key {
@@ -340,7 +340,7 @@
             #binding-cells = <0>;
             bindings = <&kp R>, <&mt LS(R) R>, <&mt LC(R) R>, <&mt LA(R) R>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
         };
 
         s_key: s_key {
@@ -349,7 +349,7 @@
             #binding-cells = <0>;
             bindings = <&kp S>, <&mt LS(S) S>, <&mt LC(S) S>, <&mt LA(S) S>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
         };
 
         t_key: t_key {
@@ -358,7 +358,7 @@
             #binding-cells = <0>;
             bindings = <&kp T>, <&mt LS(T) T>, <&mt LC(T) T>, <&mt LA(T) T>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
         };
 
         g_key: g_key {
@@ -367,7 +367,7 @@
             #binding-cells = <0>;
             bindings = <&kp G>, <&mt LS(G) G>, <&mt LC(G) G>, <&mt LA(G) G>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
         };
 
         m_key: m_key {
@@ -376,7 +376,7 @@
             #binding-cells = <0>;
             bindings = <&kp M>, <&mt RS(M) M>, <&mt RC(M) M>, <&mt RA(M) M>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
         };
 
         n_key: n_key {
@@ -385,7 +385,7 @@
             #binding-cells = <0>;
             bindings = <&kp N>, <&mt RS(N) N>, <&mt RC(N) N>, <&mt RS(N) N>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
         };
 
         e_key: e_key {
@@ -394,7 +394,7 @@
             #binding-cells = <0>;
             bindings = <&kp E>, <&mt RS(E) E>, <&mt RC(E) E>, <&mt RA(E) E>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
         };
 
         i_key: i_key {
@@ -403,7 +403,7 @@
             #binding-cells = <0>;
             bindings = <&kp I>, <&mt RS(I) I>, <&mt RC(I) I>, <&mt RA(I) I>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
         };
 
         o_key: o_key {
@@ -412,7 +412,7 @@
             #binding-cells = <0>;
             bindings = <&kp O>, <&mt RS(O) O>, <&mt RC(O) O>, <&mt RA(O) O>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
         };
 
         z_key: z_key {
@@ -421,7 +421,7 @@
             #binding-cells = <0>;
             bindings = <&kp Z>, <&mt LS(Z) Z>, <&mt LC(Z) Z>, <&mt LA(Z) Z>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
         };
 
         x_key: x_key {
@@ -430,7 +430,7 @@
             #binding-cells = <0>;
             bindings = <&kp X>, <&mt LS(X) X>, <&mt LC(X) X>, <&mt LA(X) X>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
         };
 
         c_key: c_key {
@@ -439,7 +439,7 @@
             #binding-cells = <0>;
             bindings = <&kp C>, <&mt LS(C) C>, <&mt LC(C) C>, <&mt LA(C) C>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
         };
 
         d_key: d_key {
@@ -448,7 +448,7 @@
             #binding-cells = <0>;
             bindings = <&kp D>, <&mt LS(D) D>, <&mt LC(D) D>, <&mt LA(D) D>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
         };
 
         v_key: v_key {
@@ -457,7 +457,7 @@
             #binding-cells = <0>;
             bindings = <&kp V>, <&mt LS(V) V>, <&mt LC(V) V>, <&mt LA(V) V>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
         };
 
         k_key: k_key {
@@ -466,7 +466,7 @@
             #binding-cells = <0>;
             bindings = <&kp K>, <&mt RS(K) K>, <&mt RC(K) K>, <&mt RA(K) K>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
         };
 
         h_key: h_key {
@@ -475,7 +475,7 @@
             #binding-cells = <0>;
             bindings = <&kp H>, <&mt RS(H) H>, <&mt RC(H) H>, <&mt RA(H) H>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
         };
 
         semicolon_key: semicolon_key {
@@ -488,7 +488,7 @@
                 <&mt RC(SEMICOLON) SEMICOLON>,
                 <&mt RA(SEMICOLON) SEMICOLON>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
         };
 
         backslash_key: backslash_key {
@@ -501,7 +501,7 @@
                 <&mt RC(BACKSLASH) BACKSLASH>,
                 <&mt RA(BACKSLASH) BACKSLASH>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
         };
 
         single_quote_key: single_quote_key {
@@ -514,7 +514,7 @@
                 <&mt RC(SINGLE_QUOTE) SINGLE_QUOTE>,
                 <&mt RA(SINGLE_QUOTE) SINGLE_QUOTE>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
         };
 
         comma_key: comma_key {
@@ -527,7 +527,7 @@
                 <&mt RC(COMMA) COMMA>,
                 <&mt RA(COMMA) COMMA>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
         };
 
         period_key: period_key {
@@ -540,7 +540,7 @@
                 <&mt RC(PERIOD) PERIOD>,
                 <&mt RA(PERIOD) PERIOD>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
         };
 
         slash_key: slash_key {
@@ -553,7 +553,7 @@
                 <&mt RC(SLASH) SLASH>,
                 <&mt RA(SLASH) SLASH>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
         };
 
         grave_key: grave_key {
@@ -566,7 +566,7 @@
                 <&mt LC(GRAVE) GRAVE>,
                 <&mt LA(GRAVE) GRAVE>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
         };
 
         left_bracket_key: left_bracket_key {
@@ -579,7 +579,7 @@
                 <&mt RC(LEFT_BRACKET) LEFT_BRACKET>,
                 <&mt RA(LEFT_BRACKET) LEFT_BRACKET>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
         };
 
         right_bracket_key: right_bracket_key {
@@ -592,7 +592,7 @@
                 <&mt RC(RIGHT_BRACKET) RIGHT_BRACKET>,
                 <&mt RA(RIGHT_BRACKET) RIGHT_BRACKET>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
         };
     };
 
@@ -680,16 +680,6 @@
 &kp ESCAPE      &mt LS(A) A                  &mt LS(R) R      &mt LS(S) S         &mt LS(T) T    &mt LS(G) G     &kp LALT                      &kp LEFT_CONTROL  &kp LEFT_GUI            &kp LEFT_GUI          &kp RIGHT_CONTROL  &kp RALT                       &mt LS(M) M         &mt LS(N) N       &mt LS(E) E          &mt LS(I) I              &mt RC(O) O               &mt DOUBLE_QUOTES SQT
 &kp LEFT_SHIFT  &mt LS(Z) Z                  &mt LS(X) X      &mt LS(C) C         &mt LS(D) D    &mt LS(V) V                                                     &tap_and_mo 1 HOME      &tap_and_mo 1 PG_UP                                                     &mt LS(K) K         &mt LS(H) H       &mt LESS_THAN COMMA  &mt GREATER_THAN DOT     &mt QUESTION FSLH         &kp RIGHT_SHIFT
 &mo 3           &mt K_CONTEXT_MENU CAPSLOCK  &mt TILDE GRAVE  &kp LEFT            &kp RIGHT                      &kp BACKSPACE                 &kp SPACE         &tap_and_tog 2 END      &tap_and_tog 2 PG_DN  &kp ENTER          &kp DELETE                                         &kp UP            &kp DOWN             &mt LEFT_BRACE LBKT      &mt RIGHT_BRACE RBKT      &mo 3
-            >;
-        };
-
-        layer_7 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
